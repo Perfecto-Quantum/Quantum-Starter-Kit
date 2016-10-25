@@ -1,18 +1,16 @@
 package com.qmetry.qaf.examples.steps.cucumber;
 
+import com.qmetry.qaf.automation.step.QAFTestStepProvider;
+import com.qmetry.qaf.automation.util.Reporter;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import org.apache.commons.lang.math.RandomUtils;
+
 import static com.qmetry.qaf.automation.core.ConfigurationManager.getBundle;
 import static com.qmetry.qaf.automation.core.QAFTestBase.pause;
 import static com.qmetry.qaf.automation.util.Validator.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
-
-import org.apache.commons.lang.math.RandomUtils;
-
-import com.qmetry.qaf.automation.step.QAFTestStepProvider;
-import com.qmetry.qaf.automation.util.Reporter;
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 @QAFTestStepProvider
 public class HelloStepdefs {

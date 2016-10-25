@@ -1,5 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests">
+    <listeners><listener class-name="com.qmetry.qaf.automation.support.perfecto.PerfectoReportiumConnector"/></listeners>
 
     <test name="amtrck d1" enabled="true">
 

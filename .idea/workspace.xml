@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a1d7732-1430-42a2-98d0-6168066750df" name="Default" comment="" />
+    <list default="true" id="5a1d7732-1430-42a2-98d0-6168066750df" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/CloudUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/ConsoleUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoUtils.java" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/DeviceUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/QAFGherkin.iml" afterPath="$PROJECT_DIR$/QAFGherkin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/testrun_config.xml" afterPath="$PROJECT_DIR$/config/testrun_config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/testrun_config1.xml" afterPath="$PROJECT_DIR$/config/testrun_config1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ivy.xml" afterPath="$PROJECT_DIR$/ivy.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/application.properties" afterPath="$PROJECT_DIR$/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/log4j.properties" afterPath="$PROJECT_DIR$/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenarios/goolge.feature" afterPath="$PROJECT_DIR$/scenarios/goolge.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/GoogleStepDefs.java" afterPath="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/GoogleStepDefs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java" afterPath="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/build.properties" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/ivy.xml" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/ivy.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/step/PerfectoCucumberSteps.java" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/step/PerfectoCucumberSteps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PefectoDeviceAppInstaller.java" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PefectoDeviceAppInstaller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoDriverListener.java" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoDriverListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.java" afterPath="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.java" />
+    </list>
     <ignored path="QAFGherkin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -22,112 +43,171 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseTestStep.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/BaseTestStep.java">
+      <file leaf-file-name="HelloStepdefs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2312">
-              <caret line="198" column="29" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2902#2903#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PefectoDeviceAppInstaller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PefectoDeviceAppInstaller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="41" column="76" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+            <state relative-caret-position="867">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStepListener.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepListener.java">
+      <file leaf-file-name="testrun_config1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/testrun_config1.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+            <state relative-caret-position="51">
+              <caret line="3" column="121" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="121" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QAFTestStepListener.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/QAFTestStepListener.java">
+      <file leaf-file-name="testrun_config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/testrun_config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="34">
+              <caret line="2" column="121" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStep.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStep.java">
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStepCaller.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepCaller.java">
+      <file leaf-file-name="build.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/build.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="391">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goolge.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scenarios/goolge.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerfectoApplicationSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sample/automation/common/steps/PerfectoApplicationSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding>
-                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1684#1685#0" expanded="false" />
+                <element signature="e#1736#1737#0" expanded="false" />
+                <element signature="e#2008#2009#0" expanded="false" />
+                <element signature="e#2076#2077#0" expanded="false" />
+                <element signature="e#2423#2424#0" expanded="false" />
+                <element signature="e#2495#2496#0" expanded="false" />
+                <element signature="e#2767#2768#0" expanded="false" />
+                <element signature="e#2835#2836#0" expanded="false" />
+                <element signature="e#3186#3187#0" expanded="false" />
+                <element signature="e#3258#3259#0" expanded="false" />
+                <element signature="e#3608#3609#0" expanded="false" />
+                <element signature="e#3676#3677#0" expanded="false" />
+                <element signature="e#4104#4105#0" expanded="false" />
+                <element signature="e#4176#4177#0" expanded="false" />
+                <element signature="e#4445#4446#0" expanded="false" />
+                <element signature="e#4517#4518#0" expanded="false" />
+                <element signature="e#4863#4864#0" expanded="false" />
+                <element signature="e#4939#4940#0" expanded="false" />
+                <element signature="e#5656#5657#0" expanded="false" />
+                <element signature="e#5732#5733#0" expanded="false" />
+                <element signature="e#6823#6824#0" expanded="false" />
+                <element signature="e#6885#6886#0" expanded="false" />
+                <element signature="e#9010#9011#0" expanded="false" />
+                <element signature="e#9039#9040#0" expanded="false" />
+                <element signature="e#9581#9582#0" expanded="false" />
+                <element signature="e#9620#9621#0" expanded="false" />
+                <element signature="e#9982#9983#0" expanded="false" />
+                <element signature="e#10027#10028#0" expanded="false" />
+                <element signature="e#10281#10282#0" expanded="false" />
+                <element signature="e#10319#10320#0" expanded="false" />
+                <element signature="e#10697#10698#0" expanded="false" />
+                <element signature="e#10771#10772#0" expanded="false" />
+                <element signature="e#11043#11044#0" expanded="false" />
+                <element signature="e#11111#11112#0" expanded="false" />
+                <element signature="e#11401#11402#0" expanded="false" />
+                <element signature="e#11467#11468#0" expanded="false" />
+                <element signature="e#12083#12084#0" expanded="false" />
+                <element signature="e#12149#12150#0" expanded="false" />
+                <element signature="e#12417#12418#0" expanded="false" />
+                <element signature="e#12492#12493#0" expanded="false" />
+                <element signature="e#12756#12757#0" expanded="false" />
+                <element signature="e#12828#12829#0" expanded="false" />
+                <element signature="e#13092#13093#0" expanded="false" />
+                <element signature="e#13163#13164#0" expanded="false" />
+                <element signature="e#13915#13916#0" expanded="false" />
+                <element signature="e#13963#13964#0" expanded="false" />
+                <element signature="e#15410#15411#0" expanded="false" />
+                <element signature="e#15434#15435#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringTestStep.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/StringTestStep.java">
+      <file leaf-file-name="JavaStepFinder.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/JavaStepFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractScenarioFileParser.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/AbstractScenarioFileParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GherkinFileParser.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/gherkin/GherkinFileParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNG.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.testng/testng/sources/testng-6.9.10-sources.jar!/org/testng/TestNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="1305" column="0" selection-start-line="1305" selection-start-column="0" selection-end-line="1305" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="425">
+              <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2960#2978#0" expanded="false" />
+                <element signature="e#3031#3041#0" expanded="false" />
+                <element signature="e#3085#3093#0" expanded="false" />
+                <element signature="e#6223#6231#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../qaf-perfecto-support" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -142,12 +222,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/application.properties" />
-        <option value="$PROJECT_DIR$/config/testrun_config.xml" />
-        <option value="$PROJECT_DIR$/ivy.xml" />
         <option value="$PROJECT_DIR$/scenarios/demo.feature" />
-        <option value="$PROJECT_DIR$/config/testrun_config1.xml" />
+        <option value="$PROJECT_DIR$/src/com/qmetry/pm/utiles/ConsoleUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/qmetry/pm/utiles/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/ivy.xml" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/ivy.xml" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/step/StepHooks.java" />
+        <option value="$PROJECT_DIR$/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/GoogleStepDefs.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoDriverListener.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/ConfigurationUtils.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoUtils.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/ConsoleUtils.java" />
+        <option value="$PROJECT_DIR$/resources/log4j-logfiles.properties" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/DeviceUtils.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/CloudUtils.java" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PefectoDeviceAppInstaller.java" />
+        <option value="$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java" />
         <option value="$PROJECT_DIR$/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/scenarios/goolge.feature" />
+        <option value="$PROJECT_DIR$/config/testrun_config1.xml" />
+        <option value="$PROJECT_DIR$/config/testrun_config.xml" />
+        <option value="$PROJECT_DIR$/../qaf-perfecto-support/build.properties" />
       </list>
     </option>
   </component>
@@ -180,7 +277,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -195,86 +292,8 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scenarios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QAFGherkin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -282,18 +301,81 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="QAFGherkin">
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="C:\Git\qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="C:\Git\qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/qmetry/qaf/automation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="support/perfecto">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="C:\Git\qaf-perfecto-support">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="com/qmetry/qaf/automation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="step">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ivysettings.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../qaf-perfecto-support/ivysettings.xml" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="IvyIDEA.ProjectSettings" />
@@ -307,12 +389,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Git\QAFGherkin\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qmetry.qaf.automation.step" />
+      <recent name="com.qmetry.pm.utiles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Git\QAFGherkin\resources" />
       <recent name="C:\Git\QAFGherkin\resources\common" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Git/QAFGherkin/config/testrun_config1.xml">
+  <component name="RunManager" selected="Ant Target.Unnamed">
     <configuration default="false" name="C:/Git/QAFGherkin/config/testrun_config.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="QAFGherkin" />
@@ -347,15 +433,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/config/testrun_config1.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -363,7 +449,7 @@
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
@@ -809,9 +895,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Git/QAFGherkin/config/testrun_config.xml" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Git/QAFGherkin/config/testrun_config1.xml" />
+    <configuration default="false" name="Unnamed" type="AntRunConfiguration" factoryName="Ant Target">
+      <antsettings antfile="file://$PROJECT_DIR$/../qaf-perfecto-support/build.xml" target="make-jar" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Ant Target.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Git/QAFGherkin/config/testrun_config.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Git/QAFGherkin/config/testrun_config1.xml" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -837,75 +928,77 @@
       <workItem from="1477330103098" duration="2238000" />
       <workItem from="1477333539967" duration="6794000" />
       <workItem from="1477361282969" duration="3306000" />
-      <workItem from="1477365821950" duration="4052000" />
+      <workItem from="1477365821950" duration="24308000" />
+      <workItem from="1477431481885" duration="86000" />
+      <workItem from="1477431872063" duration="78000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.24 at 23h 53m 11s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 15h 41m 52s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.24 at 23h 54m 07s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 15h 42m 58s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.24 at 23h 56m 56s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 15h 47m 12s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 00m 41s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 15h 53m 27s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 02m 35s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 16h 12m 35s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 04m 28s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 16h 14m 36s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 04m 43s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 17h 20m 34s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 12m 31s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 17h 27m 39s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 31m 19s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 17h 29m 01s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 00h 31m 29s.xml">
+    <history-entry file="C__Git_QAFGherkin_config_testrun_config1_xml - 2016.10.25 at 17h 32m 19s.xml">
       <configuration name="C:/Git/QAFGherkin/config/testrun_config1.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16445000" />
+    <option name="totallyTimeSpent" value="36865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="40" width="1920" height="2120" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39959738" sideWeight="0.35180205" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964268" sideWeight="0.50188273" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45395067" sideWeight="0.72834855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26472068" sideWeight="0.73157614" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Perfecto Dashboard" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25121033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20387305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17805272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964268" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Perfecto Lab" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39959738" sideWeight="0.64819795" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959655" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39959738" sideWeight="0.64281875" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964268" sideWeight="0.49811727" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964268" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -923,387 +1016,441 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/DataDrivenScenario.java</url>
-          <line>122</line>
+          <url>jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/support/perfecto/PerfectoUtils.class</url>
+          <line>541</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/ui/UiDriverFactory.java</url>
-          <line>219</line>
+          <url>file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.java</url>
+          <line>184</line>
           <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepListener.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/BaseTestStep.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/../qaf-perfecto-support/build.xml">
+      <targetFilters>
+        <filter targetName="download-ivy" isVisible="false" />
+        <filter targetName="install-ivy" isVisible="true" />
+        <filter targetName="resolve" isVisible="true" />
+        <filter targetName="init" isVisible="false" />
+        <filter targetName="clean" isVisible="false" />
+        <filter targetName="compile" isVisible="false" />
+        <filter targetName="build" isVisible="true" />
+        <filter targetName="make-jar" isVisible="true" />
+        <filter targetName="gendoc" isVisible="true" />
+        <filter targetName="gensource" isVisible="true" />
+        <filter targetName="publish2" isVisible="false" />
+        <filter targetName="publish" isVisible="false" />
+      </targetFilters>
+      <expanded value="true" />
+    </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/common/amtrak.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/pm/utiles/ApplicationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-905">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/common/search.properties">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/gherkin/GherkinScenarioFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scenarios/suite1.bdd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenarios/goolge.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenarios/restwsdemo.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assertMessages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/demo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/testrun_config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenarios/Amtrak.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/ui/UiDriverFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/pm/utiles/DeviceUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-          <folding />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/concurrent/locks/LockSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sample/automation/common/steps/PerfectoApplicationSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#15434#15435#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.seleniumhq.selenium/selenium-support/sources/selenium-support-2.53.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3689">
-          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/core/QAFTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5151">
-          <caret line="390" column="0" selection-start-line="390" selection-start-column="0" selection-end-line="390" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/common/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/sample/automation/common/steps/StepsLib.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ivysettings.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/sample/automation/common/steps/PerfectoDeviceSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/seleniumtestrunner.xml">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/ui/UiDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stepbacklog.log">
+    <entry file="jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/support/perfecto/PerfectoDriverListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="4">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/support/perfecto/PerfectoIDEConnectorUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="-676">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/testng/dataprovider/DataProviderFactory.java">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/BaseTestStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.testng/testng/sources/testng-6.9.10-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8331#8332#0" expanded="false" />
-            <element signature="e#8366#8367#0" expanded="false" />
-            <element signature="e#12414#12415#0" expanded="false" />
-            <element signature="e#12449#12450#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/common/testdata.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/commons-configuration/commons-configuration/sources/commons-configuration-1.7-sources.jar!/org/apache/commons/configuration/HierarchicalConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7327">
-          <caret line="481" column="25" selection-start-line="481" selection-start-column="25" selection-end-line="481" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#62258#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#7526#7527#0" expanded="false" />
-            <element signature="e#7565#7566#0" expanded="false" />
-            <element signature="e#8408#8409#0" expanded="false" />
-            <element signature="e#8435#8436#0" expanded="false" />
-            <element signature="e#9767#9768#0" expanded="false" />
-            <element signature="e#9826#9827#0" expanded="false" />
-            <element signature="e#12329#12330#0" expanded="false" />
-            <element signature="e#12385#12386#0" expanded="false" />
-            <element signature="e#16618#16619#0" expanded="false" />
-            <element signature="e#16668#16669#0" expanded="false" />
-            <element signature="e#18263#18264#0" expanded="false" />
-            <element signature="e#18327#18328#0" expanded="false" />
-            <element signature="e#23214#23215#0" expanded="false" />
-            <element signature="e#23264#23265#0" expanded="false" />
-            <element signature="e#27299#27300#0" expanded="false" />
-            <element signature="e#27365#27366#0" expanded="false" />
-            <element signature="e#27911#27912#0" expanded="false" />
-            <element signature="e#27958#27959#0" expanded="false" />
-            <element signature="e#33229#33230#0" expanded="false" />
-            <element signature="e#33281#33282#0" expanded="false" />
-            <element signature="e#34875#34876#0" expanded="false" />
-            <element signature="e#34950#34951#0" expanded="false" />
-            <element signature="e#35256#35257#0" expanded="false" />
-            <element signature="e#35326#35327#0" expanded="false" />
-            <element signature="e#36448#36449#0" expanded="false" />
-            <element signature="e#36508#36509#0" expanded="false" />
-            <element signature="e#37242#37243#0" expanded="false" />
-            <element signature="e#37294#37295#0" expanded="false" />
-            <element signature="e#38189#38190#0" expanded="false" />
-            <element signature="e#38240#38241#0" expanded="false" />
-            <element signature="e#39477#39478#0" expanded="false" />
-            <element signature="e#39504#39505#0" expanded="false" />
-            <element signature="e#40283#40284#0" expanded="false" />
-            <element signature="e#40310#40311#0" expanded="false" />
-            <element signature="e#41088#41089#0" expanded="false" />
-            <element signature="e#41115#41116#0" expanded="false" />
-            <element signature="e#41521#41522#0" expanded="false" />
-            <element signature="e#41558#41559#0" expanded="false" />
-            <element signature="e#43231#43232#0" expanded="false" />
-            <element signature="e#43286#43287#0" expanded="false" />
-            <element signature="e#45121#45122#0" expanded="false" />
-            <element signature="e#45152#45153#0" expanded="false" />
-            <element signature="e#45344#45345#0" expanded="false" />
-            <element signature="e#45379#45380#0" expanded="false" />
-            <element signature="e#45633#45634#0" expanded="false" />
-            <element signature="e#45675#45676#0" expanded="false" />
-            <element signature="e#47014#47015#0" expanded="false" />
-            <element signature="e#47067#47068#0" expanded="false" />
-            <element signature="e#47234#47235#0" expanded="false" />
-            <element signature="e#47277#47278#0" expanded="false" />
-            <element signature="e#47469#47470#0" expanded="false" />
-            <element signature="e#47527#47528#0" expanded="false" />
-            <element signature="e#47754#47755#0" expanded="false" />
-            <element signature="e#47834#47835#0" expanded="false" />
-            <element signature="e#48084#48085#0" expanded="false" />
-            <element signature="e#48180#48181#0" expanded="false" />
-            <element signature="e#52573#52574#0" expanded="false" />
-            <element signature="e#52609#52610#0" expanded="false" />
-            <element signature="e#53234#53235#0" expanded="false" />
-            <element signature="e#53276#53277#0" expanded="false" />
-            <element signature="e#53483#53484#0" expanded="false" />
-            <element signature="e#53540#53541#0" expanded="false" />
-            <element signature="e#53694#53695#0" expanded="false" />
-            <element signature="e#53732#53733#0" expanded="false" />
-            <element signature="e#54802#54803#0" expanded="false" />
-            <element signature="e#54840#54841#0" expanded="false" />
-            <element signature="e#55098#55099#0" expanded="false" />
-            <element signature="e#55138#55139#0" expanded="false" />
-            <element signature="e#56248#56249#0" expanded="false" />
-            <element signature="e#56295#56296#0" expanded="false" />
-            <element signature="e#57637#57638#0" expanded="false" />
-            <element signature="e#57674#57675#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/testng/pro/DataProviderUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4097">
-          <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8045#8046#0" expanded="false" />
-            <element signature="e#8077#8078#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/core/ConfigurationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/keys/ApplicationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/QAFTestStepAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/testrun_config1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="388">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/DataDrivenScenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="952">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/core/ConfigurationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.seleniumhq.selenium/selenium-api/sources/selenium-api-2.53.0-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/support/perfecto/PerfectoUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ivy.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="374">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/qaf-perfecto-support.jar!/com/qmetry/qaf/automation/step/PerfectoMobileSteps.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/core/TestBaseProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/commons-logging/commons-logging/sources/commons-logging-1.2-sources.jar!/org/apache/commons/logging/LogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="654" column="0" selection-start-line="654" selection-start-column="0" selection-end-line="654" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.seleniumhq.selenium/selenium-support/sources/selenium-support-2.53.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/keys/ApplicationProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="494" column="0" selection-start-line="494" selection-start-column="0" selection-end-line="494" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/core/QAFTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/ivy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/ws.log">
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/step/StepHooks.java" />
+    <entry file="file://$PROJECT_DIR$/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/WsTestStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/Suite1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.testng/testng/sources/testng-6.9.10-sources.jar!/org/testng/ITestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoIDEConnectorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/ui/UiDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/GoogleStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/Scenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="241" column="70" selection-start-line="241" selection-start-column="70" selection-end-line="241" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/step/PerfectoCucumberSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="312" column="8" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoReportiumConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="164" column="54" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PerfectoDriverListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/ui/webdriver/QAFWebDriverCommandAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="144" column="19" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/log4j-default.properties" />
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.perfectomobile/http-client/jars/http-client-9.2.0.1.jar!/com/perfectomobile/httpclient/device/DevicesHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/DeviceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/ConsoleUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/CloudUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sample/automation/common/steps/PerfectoApplicationSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1684#1685#0" expanded="false" />
+            <element signature="e#1736#1737#0" expanded="false" />
+            <element signature="e#2008#2009#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2423#2424#0" expanded="false" />
+            <element signature="e#2495#2496#0" expanded="false" />
+            <element signature="e#2767#2768#0" expanded="false" />
+            <element signature="e#2835#2836#0" expanded="false" />
+            <element signature="e#3186#3187#0" expanded="false" />
+            <element signature="e#3258#3259#0" expanded="false" />
+            <element signature="e#3608#3609#0" expanded="false" />
+            <element signature="e#3676#3677#0" expanded="false" />
+            <element signature="e#4104#4105#0" expanded="false" />
+            <element signature="e#4176#4177#0" expanded="false" />
+            <element signature="e#4445#4446#0" expanded="false" />
+            <element signature="e#4517#4518#0" expanded="false" />
+            <element signature="e#4863#4864#0" expanded="false" />
+            <element signature="e#4939#4940#0" expanded="false" />
+            <element signature="e#5656#5657#0" expanded="false" />
+            <element signature="e#5732#5733#0" expanded="false" />
+            <element signature="e#6823#6824#0" expanded="false" />
+            <element signature="e#6885#6886#0" expanded="false" />
+            <element signature="e#9010#9011#0" expanded="false" />
+            <element signature="e#9039#9040#0" expanded="false" />
+            <element signature="e#9581#9582#0" expanded="false" />
+            <element signature="e#9620#9621#0" expanded="false" />
+            <element signature="e#9982#9983#0" expanded="false" />
+            <element signature="e#10027#10028#0" expanded="false" />
+            <element signature="e#10281#10282#0" expanded="false" />
+            <element signature="e#10319#10320#0" expanded="false" />
+            <element signature="e#10697#10698#0" expanded="false" />
+            <element signature="e#10771#10772#0" expanded="false" />
+            <element signature="e#11043#11044#0" expanded="false" />
+            <element signature="e#11111#11112#0" expanded="false" />
+            <element signature="e#11401#11402#0" expanded="false" />
+            <element signature="e#11467#11468#0" expanded="false" />
+            <element signature="e#12083#12084#0" expanded="false" />
+            <element signature="e#12149#12150#0" expanded="false" />
+            <element signature="e#12417#12418#0" expanded="false" />
+            <element signature="e#12492#12493#0" expanded="false" />
+            <element signature="e#12756#12757#0" expanded="false" />
+            <element signature="e#12828#12829#0" expanded="false" />
+            <element signature="e#13092#13093#0" expanded="false" />
+            <element signature="e#13163#13164#0" expanded="false" />
+            <element signature="e#13915#13916#0" expanded="false" />
+            <element signature="e#13963#13964#0" expanded="false" />
+            <element signature="e#15410#15411#0" expanded="false" />
+            <element signature="e#15434#15435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/JavaStepFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2960#2978#0" expanded="false" />
+            <element signature="e#3031#3041#0" expanded="false" />
+            <element signature="e#3085#3093#0" expanded="false" />
+            <element signature="e#6223#6231#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scenarios/goolge.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/testrun_config1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="121" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/testrun_config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="121" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1311,138 +1458,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/isfw.log">
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/build.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/scenario.log">
+    <entry file="file://$PROJECT_DIR$/../qaf-perfecto-support/src/com/qmetry/qaf/automation/support/perfecto/PefectoDeviceAppInstaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/CustomStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1782">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/info.cukes/cucumber-java/sources/cucumber-java-1.2.4-sources.jar!/cucumber/api/java/en/Given.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="238">
+          <caret line="41" column="76" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="76" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qmetry/qaf/examples/steps/cucumber/HelloStepdefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scenarios/demo.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.testng/testng/sources/testng-6.9.10-sources.jar!/org/testng/TestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="1305" column="0" selection-start-line="1305" selection-start-column="0" selection-end-line="1305" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/StringTestStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/AbstractScenarioFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="254" column="0" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/client/gherkin/GherkinFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepCaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/QAFTestStepListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/TestStepListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.qmetry/qaf/sources/qaf-2.1.9-RC3-sources.jar!/com/qmetry/qaf/automation/step/BaseTestStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="198" column="29" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="29" />
-          <folding>
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2902#2903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,12 +1528,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>QAFGherkin</last-edited>
+          <last-edited>IvyIDEA|qaf-perfecto-support</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1523,6 +1552,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

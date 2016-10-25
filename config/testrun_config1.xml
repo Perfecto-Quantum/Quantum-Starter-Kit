@@ -1,14 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests"
 	thread-count="100">
+	<listeners><listener class-name="com.qmetry.qaf.automation.support.perfecto.PerfectoReportiumConnector"/></listeners>
 
 	<test name="GherkinTest" enabled="true" parallel="methods" thread-count="10">
 		<!-- <parameter name="step.provider.pkg" value="com.qmetry.qaf.examples.steps.cucumber" 
 			/> <parameter name="scenario.file.loc" value="scenarios" /> <parameter name="selenium.defaultBrowser" 
 			value="chromeDriver"/> -->
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<groups>
 			<run>
-				<include name="@dd" />
+				<include name="@Web" />
 			</run>
 		</groups>
 
