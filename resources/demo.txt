@@ -1,0 +1,6 @@
+#col.separator=|
+app | message | recId
+Test | Test, World | REC-1
+Hello | Hello World | REC-2
+ Hello | Hello World | REC-2
+ Hello | Hello World | REC-2

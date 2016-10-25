@@ -1,0 +1,10 @@
+
+
+SCENARIO: SampleTest
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"]}
+	
+	Given open calculator
+	When add 3 into 5
+	Then result should be 8
+	
+END

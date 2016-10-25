@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests"
+	thread-count="100">
+
+	<test name="GherkinTest" enabled="true" parallel="methods" thread-count="10">
+		<!-- <parameter name="step.provider.pkg" value="com.qmetry.qaf.examples.steps.cucumber" 
+			/> <parameter name="scenario.file.loc" value="scenarios" /> <parameter name="selenium.defaultBrowser" 
+			value="chromeDriver"/> -->
+		<groups>
+			<run>
+				<include name="@dd" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+	<test name="BDD Test android" enabled="false">
+		<parameter name="env.resources" value="resources/common;resources/android" />
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+
+
+	<test name="BDD Test ios" enabled="false">
+		<parameter name="env.resources" value="resources/common;resources/ios" />
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+
+</suite>

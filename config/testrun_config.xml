@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests">
+
+    <test name="amtrck d1" enabled="true">
+
+        <parameter name="driver.capabilities.deviceName" value="F15118A63C51D54E3CEA474B32CFE2ECDAF1AB70"></parameter>
+        <parameter name="env.resources" value="resources/common"/>
+        <groups>
+            <run>
+                <include name="@amtrak"/>
+            </run>
+        </groups>
+        <classes>
+            <class
+                    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    <test name="amtrck d2" enabled="false">
+
+        <parameter name="driver.capabilities.deviceName" value="988667325047395643"></parameter>
+        <parameter name="env.resources" value="resources/common"/>
+        <groups>
+            <run>
+                <include name="@amtrak"/>
+            </run>
+        </groups>
+        <classes>
+            <class
+                    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+</suite>

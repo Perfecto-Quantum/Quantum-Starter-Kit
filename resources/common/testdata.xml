@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+	<qmetry>
+		<fw>QMetry Automation Framework</fw>
+	</qmetry>
+	<demo>
+		<helloworld>
+			<dataset>
+				<app>My Test</app>
+				<message>My Test World</message>
+				<recId>REC-101</recId>
+			</dataset>
+			<dataset>
+				<app>QAF</app>
+				<message>QAF World</message>
+				<recId>REC-102</recId>
+			</dataset>
+		</helloworld>
+	</demo>
+</testdata>

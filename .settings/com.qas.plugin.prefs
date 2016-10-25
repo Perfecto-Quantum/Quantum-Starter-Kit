@@ -1,0 +1,3 @@
+config.params.custom.metadata=[{"enabled"\:false,"name"\:"groups","type"\:"List","possibleValues"\:["SMOKE","P1","P2"]}]
+config.params.keys=[{"enabled"\:false,"label"\:"Locales","key"\:"env.default.locale","values"\:"en_US,hi_IN,gu_IN,pt_BR,ru_RU,fr_FR,es_ES,ja_JP,zh_CN,en_UK,de_DE,it_IT,ko_KR,zh_TW"}]
+eclipse.preferences.version=1
