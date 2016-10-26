@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/QAFGherkin.iml" filepath="$PROJECT_DIR$/QAFGherkin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../qaf-perfecto-support/qaf-perfecto-support.iml" filepath="$PROJECT_DIR$/../qaf-perfecto-support/qaf-perfecto-support.iml" />
     </modules>
   </component>
 </project>

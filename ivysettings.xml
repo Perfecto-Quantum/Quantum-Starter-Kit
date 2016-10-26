@@ -10,10 +10,13 @@
 	OF ANY KIND, either express or implied. See the License for the specific 
 	language governing permissions and limitations under the License. -->
 <ivysettings>
+	<property name="ivy.checksums" value=""/>
 	<settings defaultResolver="qaf" />
 	<resolvers>
 		<chain name="qaf">
 			<ibiblio name="central" m2compatible="true" />
+			<ibiblio name="PS" m2compatible="true"
+					 root="https://github.com/PerfectoProfessionalServices/qaf-perfecto-support/raw/master/repository" />
 			<ibiblio name="QAF" m2compatible="true"
 				root="https://qmetry.github.io/qaf/dist" />
 			<ibiblio name="jai" m2compatible="true"
