@@ -1,1 +1,0 @@
-Placeholder for external libraries which are not available in public/private repository

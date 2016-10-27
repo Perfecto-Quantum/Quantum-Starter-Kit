@@ -1,0 +1,14 @@
+<root>
+    <login>
+        <data>
+            <username>xmluser1</username>
+            <password>xmlpass1</password>
+            <isvalid>true</isvalid>
+        </data>
+        <data>
+            <username>xmluser2</username>
+            <password>xmlpass2</password>
+            <isvalid>true</isvalid>
+        </data>
+    </login>
+</root>
