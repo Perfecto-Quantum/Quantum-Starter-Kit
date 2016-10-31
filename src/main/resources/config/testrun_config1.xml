@@ -2,20 +2,29 @@
 <suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests"
 	thread-count="100">
 
-	<test name="GherkinTest" enabled="true" parallel="methods" thread-count="10">
-		<!-- <parameter name="step.provider.pkg" value="com.qmetry.qaf.examples.steps.cucumber" 
-			/> <parameter name="scenario.file.loc" value="scenarios" /> <parameter name="selenium.defaultBrowser" 
-			value="chromeDriver"/> -->
-		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+	<test name="GherkinTest Android" enabled="false" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="3300A5DB0E4923EB"></parameter>
 		<groups>
 			<run>
-				<include name="@Web1" />
+				<include name="@roojoom" />
 			</run>
 		</groups>
-
 		<classes>
 			<class
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+	<test name="GherkinTest iOS" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.deviceName" value="95E0EEA907ECC690914C7ABE68786B3EDE4343DF"></parameter>
+		<groups>
+			<run>
+				<include name="@roojoom" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
 
