@@ -1,6 +1,6 @@
 @Web
 Feature: Google Search
-@Web1
+  @Web1
   Scenario: Search QMetry
     Given I am on Google Search Page
     When I search for "git qmetry"

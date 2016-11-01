@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests"
+	thread-count="100">
+
+	<test name="GherkinTest Android" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<groups>
+			<run>
+				<include name="@Web1" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+	<test name="GherkinTest iOS" enabled="false" thread-count="10">
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<groups>
+			<run>
+				<include name="@Web1" />
+			</run>
+		</groups>
+		<classes>
+			<class
+					name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+</suite>

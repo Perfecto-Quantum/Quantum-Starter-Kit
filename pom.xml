@@ -5,10 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.qmetry</groupId>
-    <artifactId>QAFGherkin</artifactId>
+    <artifactId>Quantum</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <profiles>
+        <!-- THESE PROFILES WILL BE ACTIVATED IF THE CORRESPONDING ENVIRONMENT VARIABLES ARE NOT FOUND -->
+        <!-- WAYS TO SET ENVIRONMENT VARIABLES INCLUDE USING JENKINS PARAMETERS OR CREATING AN IDE MAVEN BUILD CONFIGURATION -->
         <profile>
             <id>env.TESTNG_FILE</id>
             <activation>
@@ -17,13 +19,54 @@
                 </property>
             </activation>
             <properties>
+                <!-- SUBSTITUTE THE DEFAULT TESTNG.XML FILE NAME HERE -->
+                <!-- WILL USE THIS FILE NAME IF TESTNG_FILE ENVIRONMENT VARIABLE NOT SET -->
                 <env.TESTNG_FILE>testng.xml</env.TESTNG_FILE>
+            </properties>
+        </profile>
+        <profile>
+            <id>env.CLOUD_URL</id>
+            <activation>
+                <property>
+                    <name>!env.CLOUD_URL</name>
+                </property>
+            </activation>
+            <properties>
+                <!-- SUBSTITUTE YOUR PERFECTO CLOUD URL HERE -->
+                <!-- WILL USE THIS URL IF CLOUD_URL ENVIRONMENT VARIABLE NOT SET -->
+                <env.CLOUD_URL>https://partners.perfectomobile.com/nexperience/perfectomobile/wd/hub</env.CLOUD_URL>
+            </properties>
+        </profile>
+        <profile>
+            <id>env.CLOUD_USER</id>
+            <activation>
+                <property>
+                    <name>!env.CLOUD_USER</name>
+                </property>
+            </activation>
+            <properties>
+                <!-- SUBSTITUTE YOUR DEFAULT USER HERE -->
+                <!-- WILL USE THIS PASSWORD IF CLOUD_USER ENVIRONMENT VARIABLE NOT SET -->
+                <env.CLOUD_USER>quantum-demo@perfectomobile.com</env.CLOUD_USER>
+            </properties>
+        </profile>
+        <profile>
+            <id>env.CLOUD_PASS</id>
+            <activation>
+                <property>
+                    <name>!env.CLOUD_PASS</name>
+                </property>
+            </activation>
+            <properties>
+                <!-- SUBSTITUTE YOUR DEFAULT PASSWORD HERE -->
+                <!-- WILL USE THIS PASSWORD IF CLOUD_PASS ENVIRONMENT VARIABLE NOT SET -->
+                <env.CLOUD_PASS>Test!234</env.CLOUD_PASS>
             </properties>
         </profile>
     </profiles>
 
     <properties>
-        <testngXmlDir>src/test/resources/config</testngXmlDir>
+        <testngXmlDir>src/main/resources/config</testngXmlDir>
         <testngXmlFile>${env.TESTNG_FILE}</testngXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <qaf.version>2.1.8</qaf.version>
@@ -44,13 +87,6 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-
-        <testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <filtering>true</filtering>
-            </testResource>
-        </testResources>
 
         <plugins>
             <plugin>
@@ -79,6 +115,9 @@
                     <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                     <systemPropertyVariables>
                         <application.properties.file>resources/application.properties</application.properties.file>
+                        <remote.server>${env.CLOUD_URL}</remote.server>
+                        <perfecto.capabilities.user>${env.CLOUD_USER}</perfecto.capabilities.user>
+                        <perfecto.capabilities.password>${env.CLOUD_PASS}</perfecto.capabilities.password>
                     </systemPropertyVariables>
 
                     <suiteXmlFiles>
@@ -129,7 +168,7 @@
         <dependency>
             <groupId>com.qmetry</groupId>
             <artifactId>qaf</artifactId>
-            <version>2.1.9-RC3</version>
+            <version>2.1.9</version>
         </dependency>
         <dependency>
             <groupId>com.qmetry</groupId>
