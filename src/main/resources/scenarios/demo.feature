@@ -30,4 +30,5 @@ Feature: Hello World
     When I ask it to say hi
     Then it should answer with "<message>"
 
-    Examples: {'key' : 'demo.helloworld.dataset'}
+    Examples:{'key' : 'demo.helloworld.dataset'}
+      | | |

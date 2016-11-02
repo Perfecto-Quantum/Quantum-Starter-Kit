@@ -1,6 +1,6 @@
 @roojoom
 Feature: Switch Frame Test
-
+  @roojoom
   Scenario: Switch Frame Test
     Given I open browser to webpage "http://nunzioweb.com/iframes-example.htm"
     Then "iframe1" should exist

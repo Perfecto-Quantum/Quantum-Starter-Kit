@@ -1,9 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QAF-Gherkin-Demo" verbose="0" parallel="false"
-	thread-count="100">
-
+<suite name="QAF-Gherkin-Demo" verbose="0" parallel="false" thread-count="100">
+<listeners><listener class-name="com.perfectomobile.quantum.listerners.QuantumReportiumListener"/></listeners>
 	<test name="GherkinTest Android" enabled="true" thread-count="10">
-		<parameter name="driver.capabilities.deviceName" value="3300A5DB0E4923EB"></parameter>
+		<parameter name="driver.capabilities.deviceName" value="2B73E38D"></parameter>
 		<groups>
 			<run>
 				<include name="@roojoom" />
