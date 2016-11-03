@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
  
 <suite name="Quantum Cucumber Suite" verbose="0" parallel="tests"  data-provider-thread-count="10" thread-count="10">
-	<listeners><listener class-name="com.perfectomobile.quantum.listerners.QuantumReportiumListener"/></listeners>
+	<listeners><listener class-name="com.quantum.listerners.QuantumReportiumListener"/></listeners>
 	<parameter name="driver.capabilities.platformName" value="iOS"></parameter>
 	<parameter name="features" value="src/main/resources/scenarios"/>
-	<parameter name="glue" value="com.perfectomobile.quantum.steps"/>
+	<parameter name="glue" value="com.quantum.steps"/>
 	<parameter name="tags" value="@tag1,@tagdd"/>
 	<parameter name="driver.retry.count" value="10"/>
 	<parameter name="driver.retry.wait.sec" value="10"/>
@@ -12,28 +12,28 @@
 	<parameter name="testPerScenario" value="true"/>
 	<parameter name="selenium.singletone" value="m"/>
 
-	<test name="BDD_Device_List" enabled="true" parallel="instances">
+	<test name="BDD_Device_List" enabled="false" parallel="instances">
 		<parameter name="driver.capabilities.deviceName" value="2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6"></parameter>
 		<parameter name="tags" value="@roojoom"/>
 		<classes>
-			<class name="com.perfectomobile.quantum.runners.CucumberTestRunner"></class>
+			<class name="com.quantum.runners.CucumberTestRunner"></class>
 		</classes>
 	</test>
 
-	<test name="Quantum Mock Driver Test" enabled="true" parallel="false">
+	<test name="Quantum Mock Driver Test" enabled="false" parallel="false">
 		<parameter name="driver.capabilities.deviceName" value="2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6"></parameter>
-		<parameter name="glue" value="com.perfectomobile.quantum.mock"/>
+		<parameter name="glue" value="com.quantum.mock"/>
 		<parameter name="tags" value="@mock"/>
 		<classes>
-			<class name="com.perfectomobile.quantum.mock.MockCucumberTestsRunner"></class>
+			<class name="com.quantum.mock.MockCucumberTestsRunner"></class>
 		</classes>
 	</test>
 	
-	<test name="Generic_IOS" enabled="false" parallel="instances" preserve-order="true">
-        <!--<parameter name="tags" value="@tag1"/>-->
+	<test name="Generic_IOS" enabled="true" parallel="instances" preserve-order="true">
+		<parameter name="tags" value="@roojoom"/>
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<classes>
-			<class name="com.perfectomobile.quantum.runners.CucumberTestRunner"></class>
+			<class name="com.quantum.runners.CucumberTestRunner"></class>
 		</classes>
 	</test>
 	
@@ -41,7 +41,7 @@
 		<parameter name="driver.capabilities.platformName" value="Android"></parameter>
 		<parameter name="tags" value="@tagdd"/>
 		<classes>
-			<class name="com.perfectomobile.quantum.runners.CucumberTestRunner"></class>
+			<class name="com.quantum.runners.CucumberTestRunner"></class>
 		</classes>
 	</test>
 </suite>

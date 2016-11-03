@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.sample.automation.common.steps;
+package com.quantum.steps.common;
 
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;

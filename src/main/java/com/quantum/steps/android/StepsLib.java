@@ -1,11 +1,11 @@
 /**
  * 
  */
-package com.sample.automation.android.steps;
-
-import static com.qmetry.qaf.automation.step.CommonStep.verifyText;
+package com.quantum.steps.android;
 
 import com.qmetry.qaf.automation.step.QAFTestStep;
+
+import static com.qmetry.qaf.automation.step.CommonStep.verifyText;
 /**
  * @author chirag.jayswal
  *

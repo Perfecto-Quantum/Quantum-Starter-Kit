@@ -1,4 +1,4 @@
-package com.qmetry.qaf.examples.steps.cucumber;
+package com.quantum.steps.cucumber;
 
 import static com.qmetry.qaf.automation.util.Validator.assertThat;
 import static org.xmlmatchers.transform.XmlConverters.the;

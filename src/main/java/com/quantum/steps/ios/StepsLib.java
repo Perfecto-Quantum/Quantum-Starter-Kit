@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.sample.automation.ios.steps;
+package com.quantum.steps.ios;
 
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.verifyText;

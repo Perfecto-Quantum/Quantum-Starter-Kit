@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="QAF-Gherkin-Demo" verbose="0" parallel="tests">
-    <listeners><listener class-name="com.perfectomobile.quantum.listerners.QuantumReportiumListener"/></listeners>
+    <listeners><listener class-name="com.quantum.listerners.QuantumReportiumListener"/></listeners>
     <test name="amtrck d1" enabled="true">
 
         <parameter name="driver.capabilities.deviceName" value="F15118A63C51D54E3CEA474B32CFE2ECDAF1AB70"></parameter>

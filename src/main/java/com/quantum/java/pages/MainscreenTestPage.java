@@ -1,4 +1,4 @@
-package com.sample.automation.common.pages;
+package com.quantum.java.pages;
 
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
