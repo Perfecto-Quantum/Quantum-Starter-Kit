@@ -20,7 +20,7 @@
 		</classes>
 	</test>
 
-	<test name="Quantum Mock Driver Test" enabled="false" parallel="false">
+	<test name="Quantum Mock Driver Test" enabled="true" parallel="false">
 		<parameter name="driver.capabilities.deviceName" value="2A56E99775698D2F1BABD7C1F9D57CA06AF0C7F6"></parameter>
 		<parameter name="glue" value="com.quantum.mock"/>
 		<parameter name="tags" value="@mock"/>
