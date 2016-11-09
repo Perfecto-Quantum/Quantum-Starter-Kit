@@ -31,7 +31,7 @@ IntelliJ IDEA users should install the following plugins:
  
 #### Optional Installations
 * For source control management, you can install [git](https://git-scm.com/downloads).
-* In order to be able to interact with a real device from Perfecto cloud, install the [Perfecto CQ Lab Plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) for your IDE.
+* In order to be able to interact with a real device from Perfecto cloud directly from your IDE, install the [Perfecto CQ Lab Plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) for your IDE.
 
 
 
