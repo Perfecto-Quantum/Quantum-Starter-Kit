@@ -2,7 +2,7 @@
 This starter kit is designed to get you up and running with Quantum framework with few simple steps, enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
 
 ## Getting Started
-To get you started you can simply download the Quantum-Starter-Kit repository and install the dependencies.
+To get you started you can simply [download](https://github.com/Project-Quantum/Quantum-Starter-Kit/archive/master.zip) the Quantum-Starter-Kit repository and install the dependencies.
 
 ### Install Dependencies
 
