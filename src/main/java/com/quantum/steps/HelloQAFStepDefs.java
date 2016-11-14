@@ -1,4 +1,4 @@
-package com.quantum.steps.cucumber;
+package com.quantum.steps;
 
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.util.Reporter;
@@ -13,7 +13,7 @@ import static com.qmetry.qaf.automation.util.Validator.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 @QAFTestStepProvider
-public class HelloStepdefs {
+public class HelloQAFStepDefs {
 
 	@Given("^I have a hello app with \"([^\"]*)\"$")
 	public void I_have_a_hello_app_with(String greeting) {
@@ -25,6 +25,7 @@ public class HelloStepdefs {
 		int i=200*(RandomUtils.nextInt(25)+3);
 		pause(i);// mimic doing some processing....
 		System.out.println("When I_ask_it_to_say_hi");
+		
 	}
 
 	@Then("^it should answer with \"([^\"]*)\"$")

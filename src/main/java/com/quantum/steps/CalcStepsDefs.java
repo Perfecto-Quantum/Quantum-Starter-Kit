@@ -1,36 +1,37 @@
 /**
  * 
  */
-package com.quantum.steps.common;
+package com.quantum.steps;
 
-import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.util.StringUtil;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 import static com.qmetry.qaf.automation.step.CommonStep.click;
+import static com.qmetry.qaf.automation.step.CommonStep.verifyText;
+
 /**
  * @author chirag.jayswal
  *
  */
 @QAFTestStepProvider
-public class StepsLib {
+public class CalcStepsDefs {
 
-	@QAFTestStep(description = "open calculator")
-	public static void openNativeApplication() {
-		//will be taken care by listener....
-	}
-	
-	
-	@QAFTestStep(description = "add {0} into {1}")
+	@When("add \"(.+)\" to \"(.+)\"")
 	public void addInto(long l1, long l2) {
 		click("name="+String.valueOf(l1));
 		click("btn.plus");
 		click("name="+String.valueOf(l2));
 		click("btn.equal");
 		
+	}
+
+	@Then("result should be \"(.+)\"")
+	public void resultShouldBe(long l1) {
+		verifyText("input.box", "in:" + String.valueOf(l1));
 	}
 
 	@Then("I switch to frame \"(.*?)\"")

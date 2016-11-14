@@ -8,10 +8,10 @@
     <artifactId>quantum-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <profiles>
-        <!-- !!!!IF YOU ARE RUNNING FROM TESTNG MAKE SURE TO TURN OFF THE MAVEN SETTINGS IN YOUR IDE THAT AUTOMATICALLY READ THE systemPropertyVariables!!!! -->
-        <!-- THESE PROFILES WILL BE ACTIVATED IF THE CORRESPONDING ENVIRONMENT VARIABLES ARE NOT FOUND -->
-        <!-- WAYS TO SET ENVIRONMENT VARIABLES INCLUDE USING JENKINS PARAMETERS OR CREATING AN IDE MAVEN BUILD CONFIGURATION -->
+    <!--<profiles>
+        &lt;!&ndash; !!!!IF YOU ARE RUNNING FROM TESTNG MAKE SURE TO TURN OFF THE MAVEN SETTINGS IN YOUR IDE THAT AUTOMATICALLY READ THE systemPropertyVariables!!!! &ndash;&gt;
+        &lt;!&ndash; THESE PROFILES WILL BE ACTIVATED IF THE CORRESPONDING ENVIRONMENT VARIABLES ARE NOT FOUND &ndash;&gt;
+        &lt;!&ndash; WAYS TO SET ENVIRONMENT VARIABLES INCLUDE USING JENKINS PARAMETERS OR CREATING AN IDE MAVEN BUILD CONFIGURATION &ndash;&gt;
         <profile>
             <id>env.TESTNG_FILE</id>
             <activation>
@@ -20,8 +20,8 @@
                 </property>
             </activation>
             <properties>
-                <!-- SUBSTITUTE THE DEFAULT TESTNG.XML FILE NAME HERE -->
-                <!-- WILL USE THIS FILE NAME IF TESTNG_FILE ENVIRONMENT VARIABLE NOT SET -->
+                &lt;!&ndash; SUBSTITUTE THE DEFAULT TESTNG.XML FILE NAME HERE &ndash;&gt;
+                &lt;!&ndash; WILL USE THIS FILE NAME IF TESTNG_FILE ENVIRONMENT VARIABLE NOT SET &ndash;&gt;
                 <env.TESTNG_FILE>testng.xml</env.TESTNG_FILE>
             </properties>
         </profile>
@@ -33,8 +33,8 @@
                 </property>
             </activation>
             <properties>
-                <!-- SUBSTITUTE YOUR PERFECTO CLOUD URL HERE -->
-                <!-- WILL USE THIS URL IF CLOUD_URL ENVIRONMENT VARIABLE NOT SET -->
+                &lt;!&ndash; SUBSTITUTE YOUR PERFECTO CLOUD URL HERE &ndash;&gt;
+                &lt;!&ndash; WILL USE THIS URL IF CLOUD_URL ENVIRONMENT VARIABLE NOT SET &ndash;&gt;
                 <env.CLOUD_URL>partners.perfectomobile.com</env.CLOUD_URL>
             </properties>
         </profile>
@@ -46,8 +46,8 @@
                 </property>
             </activation>
             <properties>
-                <!-- SUBSTITUTE YOUR DEFAULT USER HERE -->
-                <!-- WILL USE THIS PASSWORD IF CLOUD_USER ENVIRONMENT VARIABLE NOT SET -->
+                &lt;!&ndash; SUBSTITUTE YOUR DEFAULT USER HERE &ndash;&gt;
+                &lt;!&ndash; WILL USE THIS PASSWORD IF CLOUD_USER ENVIRONMENT VARIABLE NOT SET &ndash;&gt;
                 <env.CLOUD_USER>quantum-demo@perfectomobile.com</env.CLOUD_USER>
             </properties>
         </profile>
@@ -59,16 +59,16 @@
                 </property>
             </activation>
             <properties>
-                <!-- SUBSTITUTE YOUR DEFAULT PASSWORD HERE -->
-                <!-- WILL USE THIS PASSWORD IF CLOUD_PASS ENVIRONMENT VARIABLE NOT SET -->
+                &lt;!&ndash; SUBSTITUTE YOUR DEFAULT PASSWORD HERE &ndash;&gt;
+                &lt;!&ndash; WILL USE THIS PASSWORD IF CLOUD_PASS ENVIRONMENT VARIABLE NOT SET &ndash;&gt;
                 <env.CLOUD_PASS>Test!234</env.CLOUD_PASS>
             </properties>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <properties>
         <testngXmlDir>src/main/resources/config</testngXmlDir>
-        <testngXmlFile>${env.TESTNG_FILE}</testngXmlFile>
+        <testngXmlFile>testng_web.xml</testngXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <qaf.version>2.1.8</qaf.version>
         <reportium-sdk.version>1.0.0</reportium-sdk.version>
@@ -116,7 +116,7 @@
                     <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                     <systemPropertyVariables>
                         <application.properties.file>resources/application.properties</application.properties.file>
-                        <remote.server>https://${env.CLOUD_URL}/nexperience/perfectomobile/wd/hub</remote.server>
+                        <remote.server>${env.CLOUD_URL}</remote.server>
                         <perfecto.capabilities.user>${env.CLOUD_USER}</perfecto.capabilities.user>
                         <perfecto.capabilities.password>${env.CLOUD_PASS}</perfecto.capabilities.password>
                     </systemPropertyVariables>
@@ -157,6 +157,11 @@
             <version>1.3</version>
         </dependency>
         <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+<!--        <dependency>
             <groupId>com.quantum</groupId>
             <artifactId>quantum-runner</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -166,7 +171,7 @@
                     <artifactId>testng</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>

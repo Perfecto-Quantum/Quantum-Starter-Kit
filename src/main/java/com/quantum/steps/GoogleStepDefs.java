@@ -1,4 +1,4 @@
-package com.quantum.steps.cucumber;
+package com.quantum.steps;
 
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
