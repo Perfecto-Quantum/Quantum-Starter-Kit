@@ -34,7 +34,7 @@ TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
 
 ## Downloading the Quantum Project
 
-Download the [Quantum-Started-Kit repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/archive/master.zip).
+[Download](https://github.com/Project-Quantum/Quantum-Starter-Kit/archive/master.zip) the Quantum-Started-Kit repository.
 
 After downloading and unzipping the project to your computer, open it from your IDE by choosing the folder containing the pom.xml file (_Quantum-Starter-Kit-master_, you might consider renaming it).
 
