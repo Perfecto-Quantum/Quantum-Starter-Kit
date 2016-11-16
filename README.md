@@ -1,5 +1,5 @@
 # Quantum Starter Kit
-This starter kit is designed to get you up and running using the Quantum framework within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
+This starter kit is designed to get you up and running using the Quantum framework (powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
 
 Begin with installing the dependencies below, and continue with the Getting Started procedure below.
 
