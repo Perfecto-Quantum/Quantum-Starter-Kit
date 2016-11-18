@@ -1,6 +1,6 @@
 # Quantum- Step by step installation guide to intelliJ
 
-**Step 1 - Downlaod the project**
+**Step 1 - Download the project**
 goto [Starter Kit](https://github.com/Project-Quantum/Quantum-Starter-Kit) and press on the button **Download ZIP**    
 
 ![git](image/gitDownload.png?raw=true "Title")
@@ -25,7 +25,7 @@ Unzip and save the project in your working area (on your computer)
 
 Continue and follow the wizard [Default Next, Next ,Finish options]
 
-* lets build the project, rigth click on the pom.xml file > Maven > Reimport
+* lets build the project, right click on the pom.xml file > Maven > Reimport
 
 ![impMaven](image/reimp.png?raw=true "impMaven")
 
@@ -46,15 +46,15 @@ Goto resources > application.properties
 **perfecto.capabilities.password**=*Your Perfecto Password*
   
 
-**Step 4 - Verfiay the Feature and Test files**
-Feature file is a collection of scenarios (tests), this first example show how to open broswer and looks for diffrent string in google.
+**Step 4 - Verfiy the Feature and Test files**
+Feature file is a collection of scenarios (tests), this first example show how to open browser and looks for different string in google.
 ![scenario](image/1scenario.png)
   
 Quantum execution is based on testNG, before the execution lets check the testNG.xml file
 Goto > src > main > resources > config > testng_web.xml
 ![testNG](image/tngxml.png)
 
-The file you sould see:
+The file you should see:
 
 ![test](image/test.png)
 In the xml <test> define on device , in this case it will execute on any Galaxy device
@@ -64,12 +64,12 @@ Before executing the script we need to configure the execution on intelliJ
 
 Please follow these steps:  
 
-* Click on the small arrow in the top rigth frame
+* Click on the small arrow in the top right frame
 * Press the + and select Maven
 * Set the name and save it
  ![test](image/exeConf.png)
  
  **Press the Green Button**   
-The script should be executed on the device in the clould.
+The script should be executed on the device in the cloud.
 
  
