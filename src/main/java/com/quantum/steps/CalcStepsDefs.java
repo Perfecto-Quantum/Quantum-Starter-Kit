@@ -8,6 +8,7 @@ import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.util.StringUtil;
 import com.quantum.utils.AppiumUtils;
+import com.quantum.utils.ConfigurationUtils;
 import com.quantum.utils.ConsoleUtils;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -55,12 +56,12 @@ public class CalcStepsDefs {
 
 	@When("I am using an AppiumDriver")
 	public void testForAppiumDriver() {
-		if (AppiumUtils.getAppiumDriver() instanceof IOSDriver) {
+		if (ConfigurationUtils.getBaseBundle().getPropertyValue("driver.name").contains("Remote"))
+			ConsoleUtils.logWarningBlocks("Driver is an instance of QAFExtendedWebDriver");
+		else if (AppiumUtils.getAppiumDriver() instanceof IOSDriver)
 			ConsoleUtils.logWarningBlocks("Driver is an instance of IOSDriver");
-		}
-		else if (AppiumUtils.getAppiumDriver() instanceof AndroidDriver) {
+		else if (AppiumUtils.getAppiumDriver() instanceof AndroidDriver)
 			ConsoleUtils.logWarningBlocks("Driver is an instance of AndroidDriver");
-		}
 	}
 
 }
