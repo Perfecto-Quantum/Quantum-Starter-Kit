@@ -35,7 +35,6 @@ Feature: Google Search
 
     #xml file must be in directory listed in env.resources property
     Examples:{'key' : 'demo.websearch.dataset'}
-      | | |
 
   @WebDDcsv
   Scenario Outline: Search Keyword CSV Data
@@ -46,4 +45,4 @@ Feature: Google Search
 
     #for csv, txt, xls files specify datafile location
     Examples:{'datafile' : 'src/main/resources/data/testData.csv'}
-      | | |
+    
