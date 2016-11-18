@@ -31,7 +31,6 @@ Feature: Google Search
     Given I am on Google Search Page
     When I search for "<searchKey>"
     Then it should have "<searchResult>" in search results
-    #QAF bug in version 1.2.9-patch1 that causes the framework to not find the last step when using Scenario Outline with a datafile
 
     #xml file must be in directory listed in env.resources property
     Examples:{'key' : 'demo.websearch.dataset'}
@@ -41,7 +40,6 @@ Feature: Google Search
     Given I am on Google Search Page
     When I search for "<searchKey>"
     Then it should have "<searchResult>" in search results
-    #QAF bug in version 1.2.9-patch1 that causes the framework to not find the last step when using Scenario Outline with a datafile
 
     #for csv, txt, xls files specify datafile location
     Examples:{'datafile' : 'src/main/resources/data/testData.csv'}
