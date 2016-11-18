@@ -16,7 +16,7 @@ Feature: Google Search
       | QAFTestStep                 |
 
   @WebDD
-  Scenario Outline: Search Keyword
+  Scenario Outline: Search Keyword Inline Data
     Given I am on Google Search Page
     When I search for "<searchKey>"
     Then it should have "<searchResult>" in search results
@@ -25,3 +25,25 @@ Feature: Google Search
       | recId         | searchKey         | searchResult                          |
       | StackOverflow | QAF StackOverflow | using QAF                             |
       | ISFW          | Selenium ISFW     | InfoStretch Test Automation Framework |
+
+  @WebDDxml
+  Scenario Outline: Search Keyword XML Data
+    Given I am on Google Search Page
+    When I search for "<searchKey>"
+    Then it should have "<searchResult>" in search results
+    #QAF bug in version 1.2.9-patch1 that causes the framework to not find the last step when using Scenario Outline with a datafile
+
+    #xml file must be in directory listed in env.resources property
+    Examples:{'key' : 'demo.websearch.dataset'}
+      | | |
+
+  @WebDDcsv
+  Scenario Outline: Search Keyword CSV Data
+    Given I am on Google Search Page
+    When I search for "<searchKey>"
+    Then it should have "<searchResult>" in search results
+    #QAF bug in version 1.2.9-patch1 that causes the framework to not find the last step when using Scenario Outline with a datafile
+
+    #for csv, txt, xls files specify datafile location
+    Examples:{'datafile' : 'src/main/resources/data/testData.csv'}
+      | | |
