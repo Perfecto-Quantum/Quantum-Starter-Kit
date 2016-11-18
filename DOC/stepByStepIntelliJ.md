@@ -30,7 +30,7 @@ Continue and follow the wizard [Default Next, Next ,Finish options]
 ![impMaven](image/reimp.png?raw=true "impMaven")
 
 It can take few minutes and in the end the project should looks:  
-![Proj](image/Proj.png?raw=true "impMaven")
+![Proj](image/proj.png?raw=true "impMaven")
 
 
 **Step 3 - Configure the Cloud**
