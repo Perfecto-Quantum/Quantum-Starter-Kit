@@ -40,12 +40,6 @@ After downloading and unzipping the project to your computer, open it from your 
 
 Look [here](https://github.com/PerfectoCode/Quantum/wiki/Project%20Layout) to understand the project layout, and find your way in it.
 
-```
-
-TAL - ASK YAACOV TO UPDATE THE CURRENT STRUCTURE
-
-```
-
 **********************
 # Getting Started
 This procedure leads you through the various Quantum framework's aspects:
