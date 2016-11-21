@@ -6,6 +6,7 @@ Feature: Google Search
     Given I am on Google Search Page
     When I search for "git qmetry"
     Then it should have "QMetry Automation Framework" in search results
+    Then I am on Google Search Page
 
   @WebResultsList
   Scenario: Search QMetry with results
@@ -33,7 +34,7 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     #xml file must be in directory listed in env.resources property
-    Examples:{'key' : 'demo.websearch.dataset'}
+    Examples: {'key' : 'demo.websearch.dataset'}
 
   @WebDDcsv
   Scenario Outline: Search Keyword CSV Data
@@ -42,5 +43,5 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     #for csv, txt, xls files specify datafile location
-    Examples:{'datafile' : 'src/main/resources/data/testData.csv'}
+    Examples: {'datafile' : 'src/main/resources/data/testData.csv'}
     
