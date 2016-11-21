@@ -22,9 +22,9 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     Examples:
-      | recId         | searchKey         | searchResult                          |
-      | StackOverflow | QAF StackOverflow | using QAF                             |
-      | ISFW          | Selenium ISFW     | InfoStretch Test Automation Framework |
+      | recId | searchKey       | searchResult                |
+      | 1     | git qmetry      | QMetry Automation Framework |
+      | 2     | QAFTestStep     | QAFTestStep.java            |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data

@@ -75,6 +75,10 @@
             <url>https://qmetry.github.io/qaf/dist</url>
         </repository>
         <repository>
+            <releases>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
             <id>ps</id>
             <url>https://github.com/Project-Quantum/mvn/raw/master/repository</url>
         </repository>
@@ -134,7 +138,7 @@
         <dependency>
             <groupId>com.quantum</groupId>
             <artifactId>quantum-support</artifactId>
-            <version>1.2-SNAPSHOT</version>
+            <version>1.3-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
