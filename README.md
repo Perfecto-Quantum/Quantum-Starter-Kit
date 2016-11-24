@@ -104,3 +104,56 @@ Quantum has additional features to allow better customization to your specific a
 Configuration of the [application properties](The application.properties file) and the [TestNG.xml file](Quantum TestNG File), as well as creating object definitions in the [Object Repository](Object Repository) and [[creating customized steps|Creating customized steps]], require knowledge of Java, TestNG, and XPath.
 
 :information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](Object Repository).
+
+**********************
+# Project Directory Structure
+```
+.
+│   pom.xml                                                 # Maven pom file for build and dependencies  
+│   README.md                                               # The current readme file  
+│  
+├───resources                                               # Default resources dir  
+│       application.properties                              # set credentials and other project properties  
+│  
+└───src												   		
+    └───main  
+        ├───java                                            # All code for project inside java directory  
+        │   └───com  
+        │       └───quantum                                 # com.quantum namespace  
+        │           ├───java                                # Package namespace for pure java tests  
+        │           │   └───pages                           # Package for Java test Page Object Models  
+        │           │           MainscreenTestPage.java     # Example POM  
+        │           │  
+        │           └───steps                               # Package namespace for Gherkin/Cucumber step definitions  
+        │                   CalcStepsDefs.java              # Step definitions for appiumCalc feature file  
+        │                   GoogleStepDefs.java             # Step definitions for webSearch feature file  
+        │  
+        └───resources                                       # All project specific files here  
+            │   assertMessages.properties                   # Property definitions used in qaf library AssertionService class  
+            │   log4j.properties                            # Controls all logging to console and log files  
+            │  
+            ├───android                                     # Additional Android properties. Specified in testng_appium file.  
+            │       env.properties                          # Android specific additional environment variables  
+            │       mainscreen.loc                          # Android specific object locators for calculator test objects  
+            │  
+            ├───common                                      # Common resources dir. Set with env.resources in application.properties  
+            │       search.loc                              # Common object locators used in webSearch feature file  
+            │       testdata.xml                            # Data used in xml scenario in webSearch feature  
+            │  
+            ├───config                                      # TestNG xml test file directory  
+            │       testng_appium.xml                       # TestNG file that runs appiumCalc feature file with @appium tag  
+            │       testng_web.xml                          # TestNG file that runs webSearch feature file with @Web tag  
+            │  
+            ├───data                                        # Data used in data driven tests stored here  
+            │       testData.csv                            # csv data file used in csv webSearch scenario  
+            │       testData.json                           # example of json data file  
+            │       testData.xls                            # example of Excel data file  
+            │  
+            ├───ios                                         # Addition iOS properties. Specified in testng_appium file.  
+            │       env.properties                          # iOS specific additional environment properties  
+            │       mainscreen.loc                          # iOS locators for calculator application DOM objects  
+            │  
+            └───scenarios                                   # Cucumber/Gherkin feature files directory  
+                    appiumCalc.feature                      # Appium Calculator app test feature file called by testng_appium xml file  
+                    webSearch.feature                       # Web Google Search feature file driven by testng_web xml file  
+``` 
