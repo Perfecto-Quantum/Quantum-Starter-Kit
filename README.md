@@ -64,49 +64,37 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 ## Creating your first test
 
 1.      Download the Quantum-Starter-Kit as zip to your computer, and rename it.
-2.      Open the project from its _pom.xml_ file, so that it opens as a Maven project with all the required dependencies.
+2.      Open the project from its _pom.xml_ file, to open it as a Maven project with all the required dependencies.
 3.      Define your CQ Lab name, username, and password in the _application.properties_ file.
 4.      Add a _.feature_ file under the _scenarios/_ folder, and procede to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
 5.      Add a _.loc_ file under the _common/_ folder, and procede to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
-6.      Clean your test from the object definitions; its lines should become syntax highlighted.
-7.      [Configure the testng file](README.md#testng-guidelines)
-8.      View [test execution](README.md#test-execution-in-perfecto-reporting) using Perfecto Reporting.
-9.      Use Quantum's [advanced features](README.md#advanced-features).
+6.      Clean your test from the object definitions until all lines become syntax highlighted.
+7.      [Configure the testng file](README.md#testng-guidelines), and run your test from it.
+
 
 ### Test writing guidelines
 
 * Begin with @featuretagname, Feature: name of feature, @scenariotagname (can be the same as the feature's tag).
-* Write your scenario using [Given/When/Then/And](https://github.com/cucumber/cucumber/wiki/Given-When-Then) BDD statements. Use the commands in the pull-down list for exact steps syntax.
-* Write your first scenario for the usual case and app's initial starting point, and later create scenarios for other cases; name them differently to enable easy identification in execution report, and name their tags differently if you want to be able to run them separately.
+* Write your scenario using [Given/When/Then/And](https://github.com/cucumber/cucumber/wiki/Given-When-Then) BDD statements. Use the commands in the pull-down list for accurate steps syntax, and easy step insertion.
+* Write your first scenario for the app's initial starting point, and later create scenarios for other cases; name them differently to enable easy identification in execution report, and name their tags differently if you want to run them separately.
 * Name your app's objects as _functionality.purpose_, for example _button.route_, _edit.start_, etc.
-* If you have a Perfecto plugin - use Perfecto's [Object Spy](https://community.perfectomobile.com/series/18628-object-spy) to obtain smart object locators for each of your app's objects; if you do not - use other common tools (such as Firebug or Chrome's Developer Tools) for that purpose. Put each object locator at the end of the line using that object - it will be used later for creating the Object Repository.�When using Object Spy, remember to set your object type to _DOM_ or _Native_ depending on your app's type being Web or Native, respectively. If you want to run your app's steps, check the _Execute on Add_ checkbox.
-* Add steps for taking screenshots to allow close examination of test results later on, and steps for waiting a few seconds for app's page loading.
+* If you have a Perfecto plugin - use Perfecto's [Object Spy](https://community.perfectomobile.com/series/18628-object-spy) to obtain smart object locators for your app's objects; if you do not - use other tools, such as Firebug or Chrome's Developer Tools, for that purpose. Put each object locator at the end of the line using that object - it will be used later for creating the Object Repository.<br>When using Object Spy, remember to set your object type to _DOM_ or _Native_ depending on your app's type being Web or Native, respectively. 
+* If you want to run your app's steps using the Object Spy, check the _Execute on Add_ checkbox.
+* Add steps for taking screenshots to allow close examination of test results later on.
+* Add steps for waiting a few seconds upon app's page loading.
 
 ### Object Repository creation guidelines
-1.      Copy-Paste your test to that file.
+1.      Copy-Paste your test to the _.loc_ file.
 2.      Remove lines unrelated to objects. 
 3.      From each object related line, create a line formatted as `objectname = locatortype=objectlocator`, for example `edit.start = xpath=//*[@label="Start location"]`.
 
 ### Testng guidelines
 
-1.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, to configure your execution setup.
-2.      Copy  the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
+1.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, depending on your app type.
+2.      Copy the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
 3.      Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
 4.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>.
 
-### Test execution in Perfecto Reporting
-
-1.    Run your test from the _testng_ file you configured, and follow its execution from the _Perfecto Dashboard_.
-2.    Once execution is complete, go to Perfecto's execution center, either via the link on the top-right side of the _Reporting_ tab in the _Perfecto Lab_, or via the link towards the end of the Event Log.
-3.    Enter your Lab credentials. The scenario names your ran in your test appear as the report name in the left column.
-4.    Delve into each scenario, to examine its execution in detail, which include the execution video, with each step indicated at the bottom-left side, along with its success/failure status, as well as its steps at the _Test Flow_ pane, on the left.
-
-### Advanced features
-
-* Quantum also allows writing data-driven tests, which obtain the data used in the test, such as login credentials, from an independent file, with a variety of supported file formats, to enable avoiding hard-coding the required data into your test. 
-* Though Quantum comes with a pretty wide selection of pre-defined steps, it is an open source system, allowing Java-skilled users to define their own steps under the _steps/_ folder, be they application-specific or general operation steps. 
-
-Learn more on Quantum at our [Quantum documentation portal](//github.com/Project-Quantum/Quantum-Starter-Kit).
 
 ## Parallel execution
 To run all samples in parallel, you need to configure the _TestNG.xml_ file, which is located under the _src/test/resources/config/_ folder.
@@ -123,7 +111,7 @@ Modify **only** the test suites not related to the Google sample we started with
 1. Replace the current tag in the community samples, so that in the _CommunityExample.feature_ sample all tags are **@sampletag**, and in the _CommunityDataDrivenExample.feature_ sample - **@sampletagdd**. <br>You may of course use other values, or leave the tags as is, but use these tag values for demonstration's sake.
 2. In the _TestNG.xml_ file, set the tag parameter value in one suite to **@sampletag**, and in the other - to **@sampletagdd**.<br>That means, that the first test suite runs the CommunityExample sample, and the second - the CommunityDataDrivenExample sample.
 3. To vary the devices used for each of the test suites, replace the capability parameter ("driver.capabilities.someCapability") in both suites with<br>`<parameter name="driver.capabilities.platformName" value="Android"/>`.<br>Set the value to "iOS" in the second test suite.<br>By that, you specify that the CommunityExample sample will run on an Android device (randomly allocated), and the CommunityDataDrivenExample sample - on an iOS device.<br>**Note:** Generally, you can use any of the numerous device selection capabilities.
-4.  Run your test in the same manner as before.<br>You can follow your test execution on Perfecto Dashboard and see the three samples running on the specified device types.
+4. Run your test in the same manner as before.<br>You can follow your test execution on Perfecto Dashboard and see the three samples running on the specified device types.
 
 ## Viewing test execution results in Perfecto Reporting
 
