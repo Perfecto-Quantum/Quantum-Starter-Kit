@@ -66,25 +66,45 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 1.      Download the Quantum-Starter-Kit as zip to your computer, and rename it.
 2.      Open the project from its _pom.xml_ file, so that it opens as a Maven project with all the required dependencies.
 3.      Define your CQ Lab name, username, and password in the _application.properties_ file.
-4.      Create a new _.feature_ file under the _scenarios/_ folder.
-5.      Write you test: begin with @featuretagname, Feature: name of feature, @scenariotagname (can be the same as the feature's tag), and start writing your scenario using [Given/When/Then/And](https://github.com/cucumber/cucumber/wiki/Given-When-Then) BDD statements. Use the pull-down list for exact steps syntax.�Start with the usual case and starting point scenario, and later create scenarios for other cases; name them differently to enable easy identification in execution report, and name their tags differently if you want to be able to run them separately.
-6.      Name your app's objects as _functionality.purpose_, for example _button.route_, _edit.start_, etc.
-7.      If you have a Perfecto plugin - use Perfecto's [Object Spy](https://community.perfectomobile.com/series/18628-object-spy) to obtain smart object locators for each of your app's objects; if you do not - use other common tools (such as Firebug or Chrome's Developer Tools) for that purpose. Put each object locator at the end of the line using that object; we'll later create from it an Object Repository.�When using Object Spy, remember to set your object type to _DOM_ or _Native_ depending on your app's type being Web or Native, respectively. If you want to run your app's steps, check the _Execute on Add_ checkbox.
-8.      Add steps for taking screenshots to allow close examination of test results later on, and steps for waiting a few seconds for app's page loading.
-9.      To create your app's Object repository, add a new file under the _common/_ folder with a _.loc_ extension. Copy-Paste your test to that file, and remove lines unrelated to objects. From each object related line create a line formatted as `objectname = locatortype=objectlocator`. For example `edit.start = xpath=//*[@label="Start location"]`.
-10.      Clean your test from the object definitions; its lines should become syntax highlighted.
-11.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, to configure your execution setup.
-12.      Copy  the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
-13.      Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
-14.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>.
-15.    Run your test from the _testng_ file you configured, and follow its execution from the _Perfecto Dashboard_.
-16.    Once execution is complete, go to Perfecto's execution center, either via the link on the top-right side of the _Reporting_ tab in the _Perfecto Lab_, or via the link towards the end of the Event Log.
-17.    Enter your Lab credentials. The scenario names your ran in your test appear as the report name in the left column.
-18.    Delve into each scenario, to examine its execution in detail, which include the execution video, with each step indicated at the bottom-left side, along with its success/failure status, as well as its steps at the _Test Flow_ pane, on the left.
+4.      Add a _.feature_ file under the _scenarios/_ folder, and procede to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
+5.      Add a _.loc_ file under the _common/_ folder, and procede to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
+6.      Clean your test from the object definitions; its lines should become syntax highlighted.
+7.      [Configure the testng file](README.md#testng-guidelines)
+8.      View [test execution](README.md#test-execution-in-perfecto-reporting) using Perfecto Reporting.
+9.      Use Quantum's [advanced features](README.md#advanced-features).
 
-Quantum also allows writing data-driven tests, which obtain the data used in the test, such as login credentials, from an independent file, with a variety of supported file formats, to enable avoiding hard-coding the required data into your test. 
+### Test writing guidelines
 
-Though Quantum comes with a pretty wide selection of pre-defined steps, it is an open source system, allowing Java-skilled users to define their own steps under the _steps/_ folder, be they application-specific or general operation steps. 
+* Begin with @featuretagname, Feature: name of feature, @scenariotagname (can be the same as the feature's tag).
+* Write your scenario using [Given/When/Then/And](https://github.com/cucumber/cucumber/wiki/Given-When-Then) BDD statements. Use the commands in the pull-down list for exact steps syntax.
+* Write your first scenario for the usual case and app's initial starting point, and later create scenarios for other cases; name them differently to enable easy identification in execution report, and name their tags differently if you want to be able to run them separately.
+* Name your app's objects as _functionality.purpose_, for example _button.route_, _edit.start_, etc.
+* If you have a Perfecto plugin - use Perfecto's [Object Spy](https://community.perfectomobile.com/series/18628-object-spy) to obtain smart object locators for each of your app's objects; if you do not - use other common tools (such as Firebug or Chrome's Developer Tools) for that purpose. Put each object locator at the end of the line using that object - it will be used later for creating the Object Repository.�When using Object Spy, remember to set your object type to _DOM_ or _Native_ depending on your app's type being Web or Native, respectively. If you want to run your app's steps, check the _Execute on Add_ checkbox.
+* Add steps for taking screenshots to allow close examination of test results later on, and steps for waiting a few seconds for app's page loading.
+
+### Object Repository creation guidelines
+1.      Copy-Paste your test to that file.
+2.      Remove lines unrelated to objects. 
+3.      From each object related line, create a line formatted as `objectname = locatortype=objectlocator`, for example `edit.start = xpath=//*[@label="Start location"]`.
+
+### Testng guidelines
+
+1.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, to configure your execution setup.
+2.      Copy  the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
+3.      Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
+4.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>.
+
+### Test execution in Perfecto Reporting
+
+1.    Run your test from the _testng_ file you configured, and follow its execution from the _Perfecto Dashboard_.
+2.    Once execution is complete, go to Perfecto's execution center, either via the link on the top-right side of the _Reporting_ tab in the _Perfecto Lab_, or via the link towards the end of the Event Log.
+3.    Enter your Lab credentials. The scenario names your ran in your test appear as the report name in the left column.
+4.    Delve into each scenario, to examine its execution in detail, which include the execution video, with each step indicated at the bottom-left side, along with its success/failure status, as well as its steps at the _Test Flow_ pane, on the left.
+
+### Advanced features
+
+* Quantum also allows writing data-driven tests, which obtain the data used in the test, such as login credentials, from an independent file, with a variety of supported file formats, to enable avoiding hard-coding the required data into your test. 
+* Though Quantum comes with a pretty wide selection of pre-defined steps, it is an open source system, allowing Java-skilled users to define their own steps under the _steps/_ folder, be they application-specific or general operation steps. 
 
 Learn more on Quantum at our [Quantum documentation portal](//github.com/Project-Quantum/Quantum-Starter-Kit).
 
