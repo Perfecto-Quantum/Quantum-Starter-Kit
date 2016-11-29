@@ -86,14 +86,14 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 ### Object Repository creation guidelines
 1.      Copy-Paste your test to the _.loc_ file.
 2.      Remove lines unrelated to objects. 
-3.      From each object related line, create a line formatted as `objectname = locatortype=objectlocator`, for example `edit.start = xpath=//*[@label="Start location"]`.
+3.      From each object related line, create a line formatted as <br>`objectname = locatortype=objectlocator`<br>For example <br>`edit.start = xpath=//*[@label="Start location"]`
 
 ### Testng guidelines
 
 1.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, depending on your app type.
 2.      Copy the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
 3.      Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
-4.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>.
+4.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <br>`<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>`
 
 
 ## Parallel execution
