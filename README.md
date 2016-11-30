@@ -42,6 +42,9 @@ Look [here](https://github.com/PerfectoCode/Quantum/wiki/Project%20Layout) to un
 
 **********************
 # Getting Started
+
+<a href="https://youtu.be/FOHrWCuNPWI"><img src="https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/img/QuantumIntroThumbnail.png" alt="Quantum Framework Introduction and Getting Started"></a>
+
 This procedure leads you through the various Quantum framework's aspects:
 
 * [Running one of the samples](README.md#running-sample-as-is) in the Quantum project as is.
