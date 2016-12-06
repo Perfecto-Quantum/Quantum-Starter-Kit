@@ -18,7 +18,7 @@ Eclipse users should also install:
 
 2. [TestNG Plugin](http://testng.org/doc/download.html)
 
-3. [Cucumber Plugin (Community version only)](https://marketplace.eclipse.org/content/cucumber-jvm-eclipse-plugin)
+3. [QAF Cucumber Plugin](https://marketplace.eclipse.org/content/qaf-bdd-editors)
 
 IntelliJ IDEA users should also install:
 
