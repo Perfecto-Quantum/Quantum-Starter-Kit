@@ -2,19 +2,19 @@
 Feature: Google Search
 
   @WebSearch
-  Scenario: Search QMetry
+  Scenario: Search Quantum
     Given I am on Google Search Page
-    When I search for "git qmetry"
-    Then it should have "QMetry Automation Framework" in search results
+    When I search for "quantum perfecto"
+    Then it should have "Introducing Quantum Framework" in search results
     Then I am on Google Search Page
 
   @WebResultsList
-  Scenario: Search QMetry with results
+  Scenario: Search Quantum with results
     Given I am on Google Search Page
-    When I search for "QAFTestStep"
+    When I search for "Project-Quantum Quantum-Starter-Kit"
     Then it should have following search results:
-      | QMetry Automation Framework |
-      | QAFTestStep                 |
+      | Starter Kit |
+      | GitHub |
 
   @WebDD
   Scenario Outline: Search Keyword Inline Data
@@ -23,9 +23,9 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     Examples:
-      | recId | searchKey       | searchResult                |
-      | 1     | git qmetry      | QMetry Automation Framework |
-      | 2     | QAFTestStep     | QAFTestStep.java            |
+      | recId | searchKey               | searchResult                  |
+      | 1     | quantum perfecto        | Introducing Quantum Framework |
+      | 2     | Project-Quantum Quantum-Starter-Kit | GitHub |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data
