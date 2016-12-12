@@ -6,11 +6,9 @@
 
 	<test name="Web Scenarios Android Test" enabled="true" thread-count="10">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
-		<parameter name="driver.capabilities.description" value="Hadas Matt"/>
-
 		<groups>
 			<run>
-				<include name="@WebResultsList" />
+				<include name="@Web" />
 			</run>
 		</groups>
 		<classes>
@@ -20,30 +18,13 @@
 	</test>
 	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
-		<parameter name="driver.capabilities.description" value="Hadas Matt"/>
 		<groups>
 			<run>
-				<include name="@WebResultsList" />
+				<include name="@Web" />
 			</run>
 		</groups>
 		<classes>
-			<class
-					name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+			<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios Android Test" enabled="false" thread-count="10">
-		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
-		<parameter name="driver.capabilities.description" value="Hadas Matt"/>
-
-		<groups>
-			<run>
-				<include name="@WebDDcsv" />
-			</run>
-		</groups>
-		<classes>
-			<class
-					name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
-
 </suite>
