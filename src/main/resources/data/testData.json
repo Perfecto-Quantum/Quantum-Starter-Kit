@@ -1,4 +1,5 @@
 [
   { "username" : "jsonuser1" , "password":"jsonpass1" , "isvalid":"false" },
-  { "username" : "jsonuser2" , "password":"jsonpass2" , "isvalid":"false" }
+  { "username" : "jsonuser2" , "password":"jsonpass2" , "isvalid":"false" },
+  { "username" : "jsonuser3" , "password":"jsonpass3" , "isvalid":"false" }
 ]
