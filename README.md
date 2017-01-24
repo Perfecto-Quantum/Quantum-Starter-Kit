@@ -135,7 +135,7 @@ All the last execution tests are listed in the Reporting execution center. The f
 ## Advanced Quantum features
 
 Quantum has additional features to allow better customization to your specific application:
-* Create your own [Object Repository](Object Repository) file to match your application objects. 
+* Create your own [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) file to match your application objects. 
 * Create a [[customized steps|Creating customized steps]] file to ease performing actions common in your application operation.
 * Write tests using either [BDD](BDD-Implementation) or [Java](Java-Implementation).
 * Configure the [TestNG.xml](Quantum TestNG File) to filter the tests to execute and the devices used in the test.
