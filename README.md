@@ -137,12 +137,12 @@ All the last execution tests are listed in the Reporting execution center. The f
 Quantum has additional features to allow better customization to your specific application:
 * Create your own [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) file to match your application objects. 
 * Create a [[customized steps|Creating customized steps]] file to ease performing actions common in your application operation.
-* Write tests using either [BDD](BDD-Implementation) or [Java](Java-Implementation).
+* Write tests using either [BDD](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/BDD-Implementation) or [Java](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Java-Implementation).
 * Configure the [TestNG.xml](Quantum TestNG File) to filter the tests to execute and the devices used in the test.
 
-Configuration of the [application properties](The application.properties file) and the [TestNG.xml file](Quantum TestNG File), as well as creating object definitions in the [Object Repository](Object Repository) and [[creating customized steps|Creating customized steps]], require knowledge of Java, TestNG, and XPath.
+Configuration of the [application properties](The application.properties file) and the [TestNG.xml file](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [[creating customized steps|Creating customized steps]], require knowledge of Java, TestNG, and XPath.
 
-:information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](Object Repository).
+:information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository).
 
 **********************
 # Project Directory Structure
