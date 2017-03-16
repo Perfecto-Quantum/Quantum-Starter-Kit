@@ -14,7 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <qaf.version>2.1.8</qaf.version>
         <reportium-sdk.version>1.0.0</reportium-sdk.version>
-        <perfectomobile.version>9.0.0.0</perfectomobile.version>
         <selenium.version>2.53.1</selenium.version>
         <testng.version>6.9.10</testng.version>
         <cukes.version>1.2.5</cukes.version>
