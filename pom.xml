@@ -17,9 +17,12 @@
         <selenium.version>2.53.1</selenium.version>
         <testng.version>6.9.10</testng.version>
         <cukes.version>1.2.5</cukes.version>
+        <qaf.version>2.1.10-RC2</qaf.version>
+        <quantum.version>1.6-SNAPSHOT</quantum.version>     
         <org.json.version>20160810</org.json.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+             
     </properties>
 
     <build>
@@ -121,7 +124,7 @@
         <dependency>
             <groupId>com.qmetry</groupId>
             <artifactId>qaf</artifactId>
-            <version>2.1.10-RC2</version>
+            <version>{qaf.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>info.cukes</groupId>
@@ -132,12 +135,12 @@
         <dependency>
             <groupId>com.qmetry</groupId>
             <artifactId>qaf-support</artifactId>
-            <version>2.1.10-RC2</version>
+            <version>{qaf.version}</version>
         </dependency>
         <dependency>
             <groupId>com.quantum</groupId>
             <artifactId>quantum-support</artifactId>
-            <version>1.6-SNAPSHOT</version>
+            <version>{qunatum.version}</version>
         </dependency>
     </dependencies>
 </project>
