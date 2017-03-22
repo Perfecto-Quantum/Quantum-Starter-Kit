@@ -124,23 +124,17 @@
         <dependency>
             <groupId>com.qmetry</groupId>
             <artifactId>qaf</artifactId>
-            <version>{qaf.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>info.cukes</groupId>
-                    <artifactId>cucumber-java</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>${qaf.version}</version>
         </dependency>
         <dependency>
             <groupId>com.qmetry</groupId>
             <artifactId>qaf-support</artifactId>
-            <version>{qaf.version}</version>
+            <version>${qaf.version}</version>
         </dependency>
         <dependency>
             <groupId>com.quantum</groupId>
             <artifactId>quantum-support</artifactId>
-            <version>{qunatum.version}</version>
+            <version>${qunatum.version}</version>
         </dependency>
     </dependencies>
 </project>
