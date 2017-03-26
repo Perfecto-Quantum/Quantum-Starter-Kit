@@ -134,7 +134,7 @@
         <dependency>
             <groupId>com.quantum</groupId>
             <artifactId>quantum-support</artifactId>
-            <version>${qunatum.version}</version>
+            <version>${quantum.version}</version>
         </dependency>
     </dependencies>
 </project>
