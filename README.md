@@ -66,13 +66,13 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 
 ## Creating your first test
 
-1.      Download the Quantum-Starter-Kit as zip to your computer, and rename it.
-2.      Open the project from its _pom.xml_ file, to open it as a Maven project with all the required dependencies.
-3.      Define your CQ Lab name, username, and password in the _application.properties_ file.
-4.      Add a _.feature_ file under the _scenarios/_ folder, and procede to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
-5.      Add a _.loc_ file under the _common/_ folder, and procede to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
-6.      Clean your test from the object definitions until all lines become syntax highlighted.
-7.      [Configure the testng file](README.md#testng-guidelines), and run your test from it.
+1. Download the Quantum-Starter-Kit as zip to your computer, and rename it.
+2. Open the project from its _pom.xml_ file, to open it as a Maven project with all the required dependencies.
+3. Define your CQ Lab name, username, and password in the _application.properties_ file.
+4. Add a _.feature_ file under the _scenarios/_ folder, and procede to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
+5. Add a _.loc_ file under the _common/_ folder, and procede to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
+6. Clean your test from the object definitions until all lines become syntax highlighted.
+7. [Configure the testng file](README.md#testng-guidelines), and run your test from it.
 
 
 ### Test writing guidelines
@@ -87,23 +87,23 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 * Add steps for waiting a few seconds upon app's page loading.
 
 ### Object Repository creation guidelines
-1.      Copy-Paste your test to the _.loc_ file.
-2.      Remove lines unrelated to objects. 
-3.      From each object related line, create a line formatted as <br>`objectname = locatortype=objectlocator`<br>For example <br>`edit.start = xpath=//*[@label="Start location"]`
+1. Copy-Paste your test to the _.loc_ file.
+2. Remove lines unrelated to objects. 
+3. From each object related line, create a line formatted as <br>`objectname = locatortype=objectlocator`<br>For example <br>`edit.start = xpath=//*[@label="Start location"]`
 
 ### Testng guidelines
 
-1.      Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, depending on your app type.
-2.      Copy the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
-3.      Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
-4.    Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <br>`<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>`
+1. Under the _config/_ folder, open the _testng_appium.xml_ or _testng_web.xml_ file, depending on your app type.
+2. Copy the first test suite, and verify it's the only one with a **true** _enabled_ property, to prevent the other test suites from running in parallel.
+3. Copy your feature/scenario tag to the _name_ property in the _include_ clause. Use a space-separated tags' list to include more scenarios and features.
+4. Add a parameter specifying the type of device, or naming a specific one, to be used for your test execution, for example, <br>`<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>`
 
 
 ## Parallel execution
 To run all samples in parallel, you need to configure the _TestNG.xml_ file, which is located under the _src/test/resources/config/_ folder.
 
-1.      For each of the test suites (enclosed within <test>...</test>), set the _enabled_ property value to **_true_**.
-2.      Run your test as before.
+1. For each of the test suites (enclosed within <test>...</test>), set the _enabled_ property value to **_true_**.
+2. Run your test as before.
 
 This results in running 2 additional samples, both searching terms in Perfecto Community; one uses hard coded search terms, and the other retrieves them from an external input file.
 
