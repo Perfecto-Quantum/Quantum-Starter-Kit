@@ -59,8 +59,8 @@ Run a single Quantum sample from the samples provided in the Starter Kit.
 
 The samples are located under the _src/main/resources/scenarios_ folder.
 
-1.      Configure yout cloud and credentials in the _appication.properties_ file (under the top _resources/_ folder).
-2.      Run your test via the right-click menu while hovering on the TestNG.xml file in the project pane (on the left).
+1. Configure yout cloud and credentials in the _appication.properties_ file (under the top _resources/_ folder).
+2. Run your test via the right-click menu while hovering on the TestNG.xml file in the project pane (on the left).
 
 The sample opens device browser at Google, searches for Perfecto Mobile, enters the site, and searches for Perfecto Object Spy.
 
