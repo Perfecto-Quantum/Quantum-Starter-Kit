@@ -12,12 +12,12 @@
         <testngXmlDir>src/main/resources/config</testngXmlDir>
         <testngXmlFile>testng_web.xml</testngXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <reportium-sdk.version>1.0.0</reportium-sdk.version>
+        <reportium-sdk.version>1.1.15</reportium-sdk.version>
         <selenium.version>2.53.1</selenium.version>
         <testng.version>6.9.10</testng.version>
         <cukes.version>1.2.5</cukes.version>
-        <qaf.version>2.1.11-RC1</qaf.version>
-        <quantum.version>1.9-RC</quantum.version>     
+        <qaf.version>2.1.11</qaf.version>
+        <quantum.version>1.11</quantum.version>
         <org.json.version>20160810</org.json.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
