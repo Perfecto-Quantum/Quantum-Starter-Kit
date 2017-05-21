@@ -18,7 +18,7 @@ Eclipse users should also install:
 
 2. [TestNG Plugin](http://testng.org/doc/download.html)
 
-3. [QAF Cucumber Plugin](https://marketplace.eclipse.org/content/qaf-bdd-editors). Or go to  install new software option in eclipse, and download https://qmetry.github.io/qaf/editor/bdd/eclipse/
+3. [QAF Cucumber Plugin](https://marketplace.eclipse.org/content/qaf-bdd-editors). Or go to  install new software option in eclipse, and download from https://qmetry.github.io/qaf/editor/bdd/eclipse/
 
 IntelliJ IDEA users should also install:
 
