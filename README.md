@@ -59,7 +59,7 @@ Run a single Quantum sample from the samples provided in the Starter Kit.
 
 The samples are located under the _src/main/resources/scenarios_ folder.
 
-1. Configure yout cloud and credentials in the _appication.properties_ file (under the top _resources/_ folder).
+1. Configure your cloud and credentials in the _application.properties_ file (under the top _resources/_ folder).
 2. Run your test via the right-click menu while hovering on the TestNG.xml file in the project pane (on the left).
 
 The sample opens device browser at Google, searches for Perfecto Mobile, enters the site, and searches for Perfecto Object Spy.
@@ -69,8 +69,8 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 1. Download the Quantum-Starter-Kit as zip to your computer, and rename it.
 2. Open the project from its _pom.xml_ file, to open it as a Maven project with all the required dependencies.
 3. Define your CQ Lab name, username, and password in the _application.properties_ file.
-4. Add a _.feature_ file under the _scenarios/_ folder, and procede to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
-5. Add a _.loc_ file under the _common/_ folder, and procede to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
+4. Add a _.feature_ file under the _scenarios/_ folder, and proceed to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
+5. Add a _.loc_ file under the _common/_ folder, and proceed to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
 6. Clean your test from the object definitions until all lines become syntax highlighted.
 7. [Configure the testng file](README.md#testng-guidelines), and run your test from it.
 
