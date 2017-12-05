@@ -13,8 +13,8 @@ Feature: Google Search
     Given I am on Google Search Page
     When I search for "Project-Quantum Quantum-Starter-Kit"
     Then it should have following search results:
-      | Starter Kit |
-      | GitHub |
+      | Getting Started |
+      | Project-Quantum |
 
   @WebDD
   Scenario Outline: Search Keyword Inline Data

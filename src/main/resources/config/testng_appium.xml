@@ -7,7 +7,7 @@
     <!-- To use actual AppiumDriver classes defined    -->
     <!-- by driverClass property in env.resources dirs -->
     <!-- Set driver.name value to perfectoDriver       -->
-    <parameter name="driver.name" value="perfectoRemoteDriver"/>
+    <parameter name="driver.name" value="perfectoDriver"/>
 
     <test name="IOS Calc Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>

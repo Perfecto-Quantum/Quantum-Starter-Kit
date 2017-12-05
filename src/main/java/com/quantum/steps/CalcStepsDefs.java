@@ -15,8 +15,6 @@ import cucumber.api.java.en.When;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
-import static com.qmetry.qaf.automation.step.CommonStep.click;
-import static com.qmetry.qaf.automation.step.CommonStep.verifyText;
 
 /**
  * @author chirag.jayswal
@@ -27,16 +25,17 @@ public class CalcStepsDefs {
 
 	@When("add \"(.+)\" to \"(.+)\"")
 	public void addInto(long l1, long l2) {
-		click("name="+String.valueOf(l1));
-		click("btn.plus");
-		click("name="+String.valueOf(l2));
-		click("btn.equal");
+
+		new QAFExtendedWebElement("name="+String.valueOf(l1)).click();
+		new QAFExtendedWebElement("btn.plus").click();
+		new QAFExtendedWebElement("name="+String.valueOf(l2)).click();;
+		new QAFExtendedWebElement("btn.equal").click();;
 		
 	}
 
 	@Then("result should be \"(.+)\"")
 	public void resultShouldBe(long l1) {
-		verifyText("input.box", "in:" + String.valueOf(l1));
+		new QAFExtendedWebElement("input.box").verifyText("in:" + String.valueOf(l1));
 	}
 
 	@Then("I switch to frame \"(.*?)\"")
