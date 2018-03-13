@@ -17,8 +17,8 @@ public class GoogleStepDefs {
 	}
 	@When("^I search for \"([^\"]*)\"$")
 	public void I_search_for(String searchKey) throws Throwable {
-		QAFExtendedWebElement searchBoxElement = new QAFExtendedWebElement("name=q");
-		QAFExtendedWebElement searchBtnElement = new QAFExtendedWebElement("name=btnG");
+		QAFExtendedWebElement searchBoxElement = new QAFExtendedWebElement("search.text.box");
+		QAFExtendedWebElement searchBtnElement = new QAFExtendedWebElement("search.button");
 
 		searchBoxElement.clear();
 		searchBoxElement.sendKeys(searchKey);
