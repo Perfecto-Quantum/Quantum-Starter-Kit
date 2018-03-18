@@ -1,3 +1,3 @@
 #locator repository for search page
 search.text.box = {\"locator\":\"name=q\",\"desc\":\"Search Text Box\"}
-search.button = {\"locator\":\"className=_S6q\",\"desc\":\"Search Button\"}
+search.button = {\"locator\":\"xpath=//button[@aria-label='Google Search']\",\"desc\":\"Search Button\"}
