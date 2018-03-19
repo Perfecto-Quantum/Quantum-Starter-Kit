@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Appium Demo Suite" verbose="0" parallel="tests">
     <listeners>
-        <listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
+        <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
     </listeners>
 
     <!-- To use actual AppiumDriver classes defined    -->
