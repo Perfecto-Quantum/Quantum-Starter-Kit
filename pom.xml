@@ -12,17 +12,17 @@
         <testngXmlDir>src/main/resources/config</testngXmlDir>
         <testngXmlFile>testng_web.xml</testngXmlFile>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <reportium-sdk.version>1.1.22</reportium-sdk.version>
+        <reportium-sdk.version>1.2.0</reportium-sdk.version>
         <selenium.version>2.53.1</selenium.version>
         <testng.version>6.9.10</testng.version>
         <cukes.version>1.2.5</cukes.version>
-        <qaf.version>2.1.12</qaf.version>
-        <qafsupport.version>2.1.11</qafsupport.version>
-        <quantum.version>1.12-RC2</quantum.version>
+        <qaf.version>2.1.13</qaf.version>
+        <qafsupport.version>2.1.13</qafsupport.version>
+        <quantum.version>1.13-RC1</quantum.version>
         <org.json.version>20160810</org.json.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-             
+
     </properties>
 
     <build>
@@ -135,6 +135,11 @@
             <groupId>com.quantum</groupId>
             <artifactId>quantum-support</artifactId>
             <version>${quantum.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.perfecto.reporting-sdk</groupId>
+            <artifactId>reportium-testng</artifactId>
+            <version>${reportium-sdk.version}</version>
         </dependency>
     </dependencies>
 </project>

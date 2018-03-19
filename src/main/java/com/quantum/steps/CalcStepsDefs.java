@@ -7,9 +7,7 @@ import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.util.StringUtil;
-import com.quantum.utils.AppiumUtils;
-import com.quantum.utils.ConfigurationUtils;
-import com.quantum.utils.ConsoleUtils;
+import com.quantum.utils.*;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.appium.java_client.android.AndroidDriver;
@@ -23,15 +21,25 @@ import io.appium.java_client.ios.IOSDriver;
 @QAFTestStepProvider
 public class CalcStepsDefs {
 
+	@When("clear Calculator")
+	public void clearCalculator() {
+
+		new QAFExtendedWebElement("btn.clear").click();
+	}
+
+
 	@When("add \"(.+)\" to \"(.+)\"")
 	public void addInto(long l1, long l2) {
 
-		new QAFExtendedWebElement("name="+String.valueOf(l1)).click();
+		DriverUtils.getAppiumDriver().findElementByAccessibilityId(String.valueOf(l1)).click();
 		new QAFExtendedWebElement("btn.plus").click();
-		new QAFExtendedWebElement("name="+String.valueOf(l2)).click();;
+		DriverUtils.getAppiumDriver().findElementByAccessibilityId(String.valueOf(l2)).click();
 		new QAFExtendedWebElement("btn.equal").click();;
-		
+
+
 	}
+
+
 
 	@Then("result should be \"(.+)\"")
 	public void resultShouldBe(long l1) {
