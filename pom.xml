@@ -147,18 +147,18 @@
             <version>1.6.1</version>
         </dependency>
         
-        		<!-- https://mvnrepository.com/artifact/org.sonatype.plexus/plexus-cipher -->
-		<!-- Support Password enc/dec -->
-		<dependency>
-    		<groupId>org.sonatype.plexus</groupId>
-    		<artifactId>plexus-cipher</artifactId>
-    		<version>1.6</version>
-		</dependency>
-		<dependency>
-    			<groupId>org.sonatype.plexus</groupId>
-    			<artifactId>plexus-sec-dispatcher</artifactId>
-    			<version>1.4</version>
-		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.sonatype.plexus/plexus-cipher -->
+	<!-- Support Password enc/dec -->
+	<dependency>
+    	    <groupId>org.sonatype.plexus</groupId>
+    	    <artifactId>plexus-cipher</artifactId>
+    	    <version>1.6</version>
+	</dependency>
+	<dependency>
+    	    <groupId>org.sonatype.plexus</groupId>
+    	    <artifactId>plexus-sec-dispatcher</artifactId>
+    	    <version>1.4</version>
+	</dependency>
         
     </dependencies>
 </project>
