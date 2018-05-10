@@ -23,9 +23,9 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     Examples:
-      | recId | searchKey               | searchResult                  |
-      | 1     | quantum perfecto        | Introducing Quantum Framework |
-      | 2     | Project-Quantum Quantum-Starter-Kit | GitHub |
+      | recId | recDescription 	| searchKey               | searchResult                  |
+      | 1     | First Data Set	| quantum perfecto        | Introducing Quantum Framework |
+      | 2     | Second Data Set 	|Project-Quantum Quantum-Starter-Kit | GitHub |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data

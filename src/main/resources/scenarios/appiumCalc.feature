@@ -3,7 +3,7 @@ Feature: Appium Example Feature
   #Sample Test Scenario Description
 
   @appium
-  Scenario: Appium Example Scenario
+  Scenario: Appium Example
     Given I start application by name "Calculator"
     And I am using an AppiumDriver
     When clear Calculator
@@ -11,7 +11,7 @@ Feature: Appium Example Feature
     Then result should be "8"
 
   @appium
-  Scenario: Appium Example Scenario 2
+  Scenario: Appium Example 2
     Given I start application by name "Calculator"
     And I am using an AppiumDriver
     When clear Calculator
