@@ -12,7 +12,6 @@
 		<testngXmlFile>testng_web.xml</testngXmlFile>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<reportium-sdk.version>1.2.0</reportium-sdk.version>
-		<selenium.version>2.53.1</selenium.version>
 		<testng.version>6.9.10</testng.version>
 		<cukes.version>1.2.5</cukes.version>
 		<qaf.version>2.1.13</qaf.version>
