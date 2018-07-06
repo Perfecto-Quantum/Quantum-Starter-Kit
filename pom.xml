@@ -16,7 +16,7 @@
 		<cukes.version>1.2.5</cukes.version>
 		<qaf.version>2.1.13</qaf.version>
 		<qafsupport.version>2.1.13</qafsupport.version>
-		<quantum.version>1.15-RC</quantum.version>
+		<quantum.version>1.16</quantum.version>
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -147,6 +147,11 @@
 			<groupId>com.perfecto.reporting-sdk</groupId>
 			<artifactId>reportium-testng</artifactId>
 			<version>${reportium-sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
 		</dependency>
 	</dependencies>
 </project>

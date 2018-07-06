@@ -13,7 +13,7 @@ Feature: Google Search
     Given I am on Google Search Page
     When I search for "Project-Quantum Quantum-Starter-Kit"
     Then it should have following search results:
-      | Getting Started |
+      | Quantum-Starter-Kit |
       | Project-Quantum |
 
   @WebDD
