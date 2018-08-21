@@ -12,11 +12,11 @@
 		<testngXmlFile>testng_web.xml</testngXmlFile>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<reportium-sdk.version>1.2.0</reportium-sdk.version>
-		<testng.version>6.9.10</testng.version>
+		<testng.version>6.10</testng.version>
 		<cukes.version>1.2.5</cukes.version>
 		<qaf.version>2.1.13</qaf.version>
 		<qafsupport.version>2.1.13</qafsupport.version>
-		<quantum.version>1.16</quantum.version>
+		<quantum.version>1.17-RC</quantum.version>
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -115,33 +115,14 @@
 			<version>${cukes.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.qmetry</groupId>
-			<artifactId>qaf</artifactId>
-			<version>${qaf.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-remote-driver</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-api</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-java</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>com.qmetry</groupId>
-			<artifactId>qaf-support</artifactId>
-			<version>${qafsupport.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.quantum</groupId>
 			<artifactId>quantum-support</artifactId>
 			<version>${quantum.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
 		</dependency>
 		<dependency>
 			<groupId>com.perfecto.reporting-sdk</groupId>
