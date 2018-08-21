@@ -16,11 +16,10 @@
 		<cukes.version>1.2.5</cukes.version>
 		<qaf.version>2.1.13</qaf.version>
 		<qafsupport.version>2.1.13</qafsupport.version>
-		<quantum.version>1.17-RC</quantum.version>
+		<quantum.version>1.17</quantum.version>
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 	</properties>
 
 	<build>
@@ -122,7 +121,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.10</version>
+			<version>${testng.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.perfecto.reporting-sdk</groupId>
