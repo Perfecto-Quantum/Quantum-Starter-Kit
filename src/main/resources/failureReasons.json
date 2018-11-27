@@ -1,0 +1,14 @@
+[  
+   {  
+      "Custom Failure Reason":[  
+         "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by:",
+         "<<Exception Message 2>>"
+      ]
+   },
+   {  
+      "Element not found":[  
+         "<<Exception Message 3>>",
+         "<<Exception Message 4>>"
+      ]
+   }
+] 
