@@ -70,26 +70,14 @@
 
 	<repositories>
 		<repository>
-			<id>qaf</id>
-			<url>https://qmetry.github.io/qaf/dist</url>
-		</repository>
-		<repository>
-			<releases>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>ignore</checksumPolicy>
-			</releases>
-			<id>ps</id>
-			<url>https://github.com/Project-Quantum/mvn/raw/master/repository</url>
-		</repository>
-		<repository>
 			<id>perfectomobile</id>
 			<name>Perfecto mobile</name>
-			<url>http://repository-perfectomobile.forge.cloudbees.com/public</url>
+			<url>https://repo1.perfectomobile.com/public/repositories/maven</url>
 		</repository>
-		<repository>
+		 <repository>
 			<id>jai</id>
 			<url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url>
-		</repository>
+		</repository> 
 	</repositories>
 
 	<dependencies>
