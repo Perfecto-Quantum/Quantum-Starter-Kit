@@ -3,7 +3,7 @@
       "CustomError": "Custom Failure Reason",
       "StackTraceErrors":[ 
          "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by:",
-         "org.openqa.selenium.WebDriverException: Get by url is not supported.",
+         "org.openqa.selenium.WebDriverException: Get by url is not supported."
       ],
       "CustomFields" : 
          [
