@@ -1,5 +1,7 @@
+<img src="https://github.com/genesisthomas/Quantum-Starter-Kit/blob/master/DOC/image/perfecto.jpg" height="75" width="300"/>
+
 # Quantum Starter Kit
-This starter kit is designed to get you up and running using the Quantum framework (powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
+This Quantum starter kit is designed to get you up and running using the Quantum framework (sponsored by [Perfecto](https://www.perfecto.io) and powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
 
 Begin with installing the dependencies below, and continue with the Getting Started procedure below.
 
