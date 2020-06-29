@@ -7,7 +7,7 @@ Feature: Appium Example Feature
     Given I start application by name "Calculator"
     And I am using an AppiumDriver
     When clear Calculator
-    When add "3" to "5"
+    And add "3" to "5"
     Then result should be "8"
 
   @appium
@@ -15,5 +15,5 @@ Feature: Appium Example Feature
     Given I start application by name "Calculator"
     And I am using an AppiumDriver
     When clear Calculator
-    When add "6" to "7"
+    And add "6" to "7"
     Then result should be "13"
