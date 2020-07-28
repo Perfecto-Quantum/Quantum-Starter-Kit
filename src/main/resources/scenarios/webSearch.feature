@@ -5,13 +5,12 @@ Feature: Google Search
   Scenario: Search Quantum
     Given I am on Google Search Page
     When I search for "quantum perfecto"
-    Then it should have "Introducing Quantum Framework" in search results
-    And I am on Google Search Page
+    Then it should have "Quantum Framework" in search results
 
   @WebResultsList
   Scenario: Search Quantum with results
     Given I am on Google Search Page
-    When I search for "Project-Quantum Quantum-Starter-Kit"
+    When I search for "perfecto quantum starter kit"
     Then it should have following search results:
       | Quantum-Starter-Kit |
       | Project-Quantum |
@@ -24,8 +23,8 @@ Feature: Google Search
 
     Examples:
       | recId | recDescription 	| searchKey               | searchResult                  |
-      | 1     | First Data Set	| quantum perfecto        | Introducing Quantum Framework |
-      | 2     | Second Data Set 	|Project-Quantum Quantum-Starter-Kit | GitHub |
+      | 1     | First Data Set	| quantum perfecto        | Quantum Framework |
+      | 2     | Second Data Set 	|perfecto quantum starter kit | GitHub |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data
