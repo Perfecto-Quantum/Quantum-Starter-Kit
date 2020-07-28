@@ -3,6 +3,7 @@
  */
 package com.quantum.steps;
 
+import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
@@ -27,23 +28,25 @@ public class CalcStepsDefs {
 		new QAFExtendedWebElement("btn.clear").click();
 	}
 
-
 	@When("add \"(.+)\" to \"(.+)\"")
 	public void addInto(long l1, long l2) {
-
 		DriverUtils.getAppiumDriver().findElementByAccessibilityId(String.valueOf(l1)).click();
 		new QAFExtendedWebElement("btn.plus").click();
 		DriverUtils.getAppiumDriver().findElementByAccessibilityId(String.valueOf(l2)).click();
-		new QAFExtendedWebElement("btn.equal").click();;
-
-
+		new QAFExtendedWebElement("btn.equal").click();
 	}
-
-
 
 	@Then("result should be \"(.+)\"")
 	public void resultShouldBe(long l1) {
-		new QAFExtendedWebElement("input.box").verifyText("in:" + String.valueOf(l1));
+		QAFExtendedWebElement resultBox; 
+		if(DeviceUtils.getQAFDriver().getCapabilities().getPlatform().toString().equalsIgnoreCase("ios")) {
+
+			resultBox = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("input.box"), l1));
+		}else {
+			resultBox = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("input.box"), l1, l1));
+		}
+		resultBox.click();
+		ReportUtils.logAssert("Expected result matches: ", resultBox.isDisplayed());
 	}
 
 	@Then("I switch to frame \"(.*?)\"")

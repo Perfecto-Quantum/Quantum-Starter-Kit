@@ -1,0 +1,84 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" verbose="0" parallel="tests"
+	thread-count="100">
+	<listeners>
+		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
+	</listeners>
+
+	<test name="Web Scenarios Chrome Test" enabled="true">
+		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
+		<parameter name="perfecto.capabilities.platformVersion"
+			value="10"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
+		<parameter name="perfecto.capabilities.browserVersion"
+			value="latest"></parameter>
+		<parameter name="perfecto.capabilities.resolution" value="1280x1024"></parameter>
+		<parameter name="perfecto.capabilities.location" value="US East"></parameter>
+		<parameter name="perfecto.capabilities.deviceType" value="Web"></parameter>
+		<parameter name="env.resources" value="src/main/resources/common" />
+		<groups>
+			<run>
+				<include name="@Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	<test name="Web Scenarios Android Test" enabled="true"
+		thread-count="10">
+		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<groups>
+			<run>
+				<include name="@Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<groups>
+			<run>
+				<include name="@Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+    <test name="IOS Calc Test" enabled="true">
+    
+	 	<parameter name="driver.name" value="perfectoDriver"/>
+        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+        <parameter name="env.resources" value="src/main/resources/ios"/>
+
+        <groups>
+            <run>
+                <include name="@appium"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    <test name="Android Calc Test" enabled="true">
+    
+	 	<parameter name="driver.name" value="perfectoDriver"/>
+        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@appium"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+</suite>

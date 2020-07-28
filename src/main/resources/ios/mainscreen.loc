@@ -1,4 +1,4 @@
-input.box = {\"locator\":\"xpath=//*[@name='Result']\",\"desc\":\"Input box\"}
+input.box = {\"locator\":\"xpath=//XCUIElementTypeStaticText[@value='%s']\",\"desc\":\"Input box\"}
 btn.plus = {\"locator\":\"name=add\",\"desc\":\"Plus Button\"}
 btn.division = {\"locator\":\"name=divide\",\"desc\":\"Division Button\"}
 btn.minus = {\"locator\":\"name=subtract\",\"desc\":\"Minus Button\"}
