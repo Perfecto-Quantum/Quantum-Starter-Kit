@@ -1,0 +1,33 @@
+version: 2.1 # use CircleCI 2.1
+jobs: # a collection of steps
+  build: # runs not using Workflows must have a `build` job as entry point
+    working_directory: ~/Quantum-Starter-Kit # directory where steps will run
+    docker: # run the steps with Docker
+      - image: circleci/openjdk:8-jdk-stretch # ...with this image as the primary container; this is where all `steps` will run
+    steps: # a collection of executable commands
+        - checkout # check out source code to working directory
+        - restore_cache: # restore the saved cache after the first run or if `pom.xml` has changed
+            # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+            key: Quantum-Starter-Kit-{{ checksum "pom.xml" }}
+        - run: mvn dependency:go-offline # gets the project dependencies
+        - save_cache: # saves the project dependencies
+            paths:
+              - ~/.m2
+            key: Quantum-Starter-Kit-{{ checksum "pom.xml" }}
+        - run: mvn clean install -B -Dremote.server=${cloudurl}  -Dperfecto.capabilities.securityToken=${securityToken} -Dreportium-job-name=${CIRCLE_PROJECT_REPONAME} -Dreportium-job-number=${CIRCLE_BUILD_NUM} -Dreportium-job-branch=${CIRCLE_BRANCH} -Dreportium-tags="quantum-starter-kit"
+        - run: echo "Perfecto Suite Report- https://${cloudName}.reporting.perfectomobile.com/library?jobName[0]=${CIRCLE_PROJECT_REPONAME}&jobNumber[0]=${CIRCLE_BUILD_NUM}"
+workflows: # The following yaml will schedule this maven build operation to run every day at 2:15am UTC
+  version: 2
+  commit:
+    jobs:
+      - build
+  nightly:
+    triggers:
+      - schedule:
+          cron: "15 2 * * *"
+          filters:
+            branches:
+              only:
+                - master      
+    jobs:
+      - build
