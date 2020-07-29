@@ -1,4 +1,6 @@
-<img src="https://github.com/genesisthomas/Quantum-Starter-Kit/blob/master/DOC/image/perfecto.jpg" height="75" width="300"/>
+<img src="https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/blob/master/DOC/image/perfecto.jpg" height="75" width="300"/>
+
+![CircleCI status](https://circleci.com/gh/Perfecto-Quantum/Quantum-Starter-Kit.svg?style=shield "CircleCI status")
 
 # Quantum Starter Kit
 This Quantum starter kit is designed to get you up and running using the Quantum framework (sponsored by [Perfecto](https://www.perfecto.io) and powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
