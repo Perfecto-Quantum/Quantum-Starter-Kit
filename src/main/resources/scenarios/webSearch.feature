@@ -13,7 +13,7 @@ Feature: Google Search
     When I search for "perfecto quantum starter kit"
     Then it should have following search results:
       | Quantum-Starter-Kit |
-      | Project-Quantum |
+      | Perfecto-Quantum |
 
   @WebDD
   Scenario Outline: Search Keyword Inline Data
