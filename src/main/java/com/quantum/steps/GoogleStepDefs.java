@@ -1,10 +1,13 @@
 package com.quantum.steps;
 
 import java.util.List;
+import java.util.Map;
 
+import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.quantum.pages.GooglePage;
+import com.quantum.utils.ReportUtils;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -35,4 +38,14 @@ public class GoogleStepDefs {
 		googlePage.verifyResult(results);
 	}
 	
+	@QAFTestStep(description = "I have the following books in the store{0}")
+	public void iHaveTheFollowingBooksInTheStore(List<Map<Object,Object>> dataList) {
+		for(Map<Object, Object> dataMap : dataList) {
+			for (Map.Entry<Object, Object> entry : dataMap.entrySet()) {
+				System.out.println(entry.getKey().toString()+"*************"+ entry.getValue().toString());
+				ReportUtils.logAssert(entry.getKey().toString()+"*************"+ entry.getValue().toString(), true);
+			}
+		}
+
+	}
 }

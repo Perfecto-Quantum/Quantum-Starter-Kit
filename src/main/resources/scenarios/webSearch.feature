@@ -44,3 +44,16 @@ Feature: Google Search
     #for csv, txt, xls files specify datafile location
     Examples: {'datafile' : 'src/main/resources/data/testData.csv'}
     
+  @TestDataTable
+  Scenario Outline: Search Quantum data table
+    Given I am on Google Search Page
+     Given I have the following books in the store
+    | title                                | author      |
+    | The Devil in the White City          | Erik Larson |
+    | The Lion, the Witch and the Wardrobe | C.S. Lewis  |
+    | In the Garden of Beasts              | Erik Larson |
+    When I search for "quantum perfecto"
+    Then it should have "Quantum Framework" in search results
+     Examples:
+      | recId | recDescription 	| searchKey               | searchResult                  |
+      | 1     | First Data Set	| quantum perfecto        | Quantum Framework |
