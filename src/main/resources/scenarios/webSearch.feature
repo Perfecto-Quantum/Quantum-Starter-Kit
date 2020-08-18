@@ -47,9 +47,8 @@ Feature: Google Search
   @TestDataTable
   Scenario Outline: Search Quantum data table
     Given I am on Google Search Page
-     Given I have the following books in the store
+    And I have the following books in the store:
     | title                                | author      |
-    | The Devil in the White City          | Erik Larson |
     | The Lion, the Witch and the Wardrobe | C.S. Lewis  |
     | In the Garden of Beasts              | Erik Larson |
     When I search for "quantum perfecto"

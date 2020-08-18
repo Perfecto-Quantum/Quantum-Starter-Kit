@@ -38,7 +38,7 @@ public class GoogleStepDefs {
 		googlePage.verifyResult(results);
 	}
 	
-	@QAFTestStep(description = "I have the following books in the store{0}")
+	@Given("^I have the following books in the store:$")
 	public void iHaveTheFollowingBooksInTheStore(List<Map<Object,Object>> dataList) {
 		for(Map<Object, Object> dataMap : dataList) {
 			for (Map.Entry<Object, Object> entry : dataMap.entrySet()) {
@@ -46,6 +46,5 @@ public class GoogleStepDefs {
 				ReportUtils.logAssert(entry.getKey().toString()+"*************"+ entry.getValue().toString(), true);
 			}
 		}
-
 	}
 }
