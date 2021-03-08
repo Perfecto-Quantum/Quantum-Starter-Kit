@@ -23,7 +23,7 @@
         </classes>
     </test>
     <test name="Android Calc Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.capabilities.model" value="Galaxy S6"></parameter>
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
