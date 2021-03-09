@@ -19,3 +19,6 @@ perfectoReports/
 /dashboard/
 *.pdf
 /bin
+Dockerfile.runner
+Dockerfile
+run.sh

@@ -167,7 +167,7 @@ Configuration of the [application properties](https://github.com/Perfecto-Quantu
         │           │           MainscreenTestPage.java     # Example POM  
         │           │  
         │           └───steps                               # Package namespace for Gherkin/Cucumber step definitions  
-        │                   CalcStepsDefs.java              # Step definitions for appiumCalc feature file  
+        │                   ExpenseTrackerSteps.java        # Step definitions for appium feature file  
         │                   GoogleStepDefs.java             # Step definitions for webSearch feature file  
         │  
         └───resources                                       # All project specific files here  
@@ -176,14 +176,14 @@ Configuration of the [application properties](https://github.com/Perfecto-Quantu
             │  
             ├───android                                     # Additional Android properties. Specified in testng_appium file.  
             │       env.properties                          # Android specific additional environment variables  
-            │       mainscreen.loc                          # Android specific object locators for calculator test objects  
+            │       expensetracker.loc                      # Android specific object locators for appium test objects  
             │  
             ├───common                                      # Common resources dir. Set with env.resources in application.properties  
             │       search.loc                              # Common object locators used in webSearch feature file  
             │       testdata.xml                            # Data used in xml scenario in webSearch feature  
             │  
             ├───config                                      # TestNG xml test file directory  
-            │       testng_appium.xml                       # TestNG file that runs appiumCalc feature file with @appium tag  
+            │       testng_appium.xml                       # TestNG file that runs appium feature file with @appium tag  
             │       testng_web.xml                          # TestNG file that runs webSearch feature file with @Web tag  
             │  
             ├───data                                        # Data used in data driven tests stored here  
@@ -193,9 +193,9 @@ Configuration of the [application properties](https://github.com/Perfecto-Quantu
             │  
             ├───ios                                         # Addition iOS properties. Specified in testng_appium file.  
             │       env.properties                          # iOS specific additional environment properties  
-            │       mainscreen.loc                          # iOS locators for calculator application DOM objects  
+            │       expensetracker.loc                      # Android specific object locators for appium test objects  
             │  
             └───scenarios                                   # Cucumber/Gherkin feature files directory  
-                    appiumCalc.feature                      # Appium Calculator app test feature file called by testng_appium xml file  
+                    appium.feature                     	   # Appium test feature file called by testng_appium xml file  
                     webSearch.feature                       # Web Google Search feature file driven by testng_web xml file  
 ``` 

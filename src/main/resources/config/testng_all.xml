@@ -74,7 +74,7 @@
         </classes>
     </test>
     <test name="Android Expense Tracker Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
         <parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/android/ExpenseAppVer1.0.apk"></parameter>
         <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>

@@ -1,7 +1,0 @@
-input.box = {\"locator\":\"xpath=//XCUIElementTypeStaticText[@value='%s']\",\"desc\":\"Input box\"}
-btn.plus = {\"locator\":\"name=add\",\"desc\":\"Plus Button\"}
-btn.division = {\"locator\":\"name=divide\",\"desc\":\"Division Button\"}
-btn.minus = {\"locator\":\"name=subtract\",\"desc\":\"Minus Button\"}
-btn.equal = {\"locator\":\"name=equals\",\"desc\":\"Equal Button\"}
-btn.clear = {\"locator\":\"xpath=//*[contains(@name, 'clear')]\",\"desc\":\"Clear Button\"}
-btn.multiplication = {\"locator\":\"xpath=//*[@name='multiply']\",\"desc\":\"UIAButton\"}

@@ -1,7 +1,0 @@
-input.box = {\"locator\":\"xpath=(//android.view.View[@text='%s'])[1] | (//android.widget.EditText[@text='%s'])[1]",\"desc\":\"Input box\"}
-btn.plus = {\"locator\":\"xpath=//*[@text='+']",\"desc\":\"Plus Button\"}
-btn.multiplication = {\"locator\":\"xpath=//*[@resource-id='com.sec.android.app.popupcalculator:id/bt_mul']\",\"desc\":\"Multiplication Button\"}
-btn.division = {\"locator\":\"name=\u00F7\",\"desc\":\"Division Button\"}
-btn.minus = {\"locator\":\"xpath=//*[@text='-']",\"desc\":\"Minus Button\"}
-btn.equal = {\"locator\":\"xpath=//*[@text='=']",\"desc\":\"Equal Button\"}
-btn.clear = {\"locator\":\"xpath=//*[@resource-id='com.sec.android.app.popupcalculator:id/bt_clear' or @text='C']",\"desc\":\"Clear Button\"}
