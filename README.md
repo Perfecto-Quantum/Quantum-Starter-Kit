@@ -38,7 +38,7 @@ TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
 
 ## Downloading the Quantum Project
 
-[Download](https://github.com/Project-Quantum/Quantum-Starter-Kit/archive/master.zip) the Quantum-Started-Kit repository.
+[Download](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/archive/master.zip) the Quantum-Started-Kit repository.
 
 After downloading and unzipping the project to your computer, open it from your IDE by choosing the folder containing the pom.xml file (_Quantum-Starter-Kit-master_, you might consider renaming it).
 
@@ -46,8 +46,6 @@ Look [here](https://github.com/PerfectoCode/Quantum/wiki/Project%20Layout) to un
 
 **********************
 # Getting Started
-
-<a target="_blank" href="https://youtu.be/FOHrWCuNPWI"><img src="https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/img/QuantumIntroThumbnail.png" alt="Quantum Framework Introduction and Getting Started"/></a>
 
 This procedure leads you through the various Quantum framework's aspects:
 
@@ -139,14 +137,14 @@ All the last execution tests are listed in the Reporting execution center. The f
 ## Advanced Quantum features
 
 Quantum has additional features to allow better customization to your specific application:
-* Create your own [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) file to match your application objects. 
+* Create your own [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) file to match your application objects. 
 * Create a [[customized steps|Creating customized steps]] file to ease performing actions common in your application operation.
-* Write tests using either [BDD](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/BDD-Implementation) or [Java](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Java-Implementation).
-* Configure the [TestNG.xml](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File) to filter the tests to execute and the devices used in the test.
+* Write tests using either [BDD](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/BDD-Implementation) or [Java](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Java-Implementation).
+* Configure the [TestNG.xml](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File) to filter the tests to execute and the devices used in the test.
 
-Configuration of the [application properties](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/The%20application.properties%20file) and the [TestNG.xml file](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [creating customized steps](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Creating%20customized%20steps), require knowledge of Java, TestNG, and XPath.
+Configuration of the [application properties](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/The%20application.properties%20file) and the [TestNG.xml file](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [creating customized steps](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Creating%20customized%20steps), require knowledge of Java, TestNG, and XPath.
 
-:information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](https://github.com/Project-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository).
+:information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository).
 
 **********************
 # Project Directory Structure

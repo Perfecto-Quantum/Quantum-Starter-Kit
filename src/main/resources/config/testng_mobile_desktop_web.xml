@@ -5,7 +5,7 @@
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
 	</listeners>
 
-	<test name="Web Scenarios Chrome Test" enabled="true">
+	<test name="Web Scenarios Chrome Test" enabled="false">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
 		<parameter name="perfecto.capabilities.platformVersion"
 			value="10"></parameter>

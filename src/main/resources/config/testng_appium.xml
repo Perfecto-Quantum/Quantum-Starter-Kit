@@ -25,6 +25,7 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
+
     <test name="Android Expense Tracker Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/android/ExpenseAppVer1.0.apk"></parameter>
