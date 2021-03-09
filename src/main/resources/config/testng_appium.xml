@@ -9,8 +9,12 @@
     <!-- Set driver.name value to perfectoDriver       -->
     <parameter name="driver.name" value="perfectoDriver"/>
 
-    <test name="IOS Calc Test" enabled="true">
+    <test name="IOS Expense Tracker Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+        <parameter name="driver.capabilities.platformVersion" value="13.4.1"/>
+        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"></parameter>
+        <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
+        <parameter name="driver.capabilities.iOSResign" value="true"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
         <groups>
@@ -22,9 +26,47 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Android Calc Test" enabled="true">
+    <test name="Android Expense Tracker Test" enabled="true">
         <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/android/ExpenseAppVer1.0.apk"></parameter>
+        <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@appium"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+    <test name="Android Emulator Expense Tracker Test" enabled="true">
+        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
+		<parameter name="driver.capabilities.platformName" value="Android"/>
+		<parameter name="driver.capabilities.platformVersion" value="11"/>
+		<parameter name="driver.capabilities.model" value="pixel 4"/>
+		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/android/ExpenseAppVer1.0.apk"/>
+		<parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
+		<parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@appium"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+    <test name="iOS Simulator Expense Tracker Test" enabled="true">
+        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
+		<parameter name="driver.capabilities.platformName" value="iOS"/>
+		<parameter name="driver.capabilities.platformVersion" value="14.3"/>
+		<parameter name="driver.capabilities.deviceName" value="iPhone 11"/>
+		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp.zip"/>
+		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
+		<parameter name="env.resources" value="src/main/resources/ios"/>
         <groups>
             <run>
                 <include name="@appium"/>

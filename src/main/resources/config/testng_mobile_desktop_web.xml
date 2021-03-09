@@ -41,6 +41,7 @@
 	</test>
 	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<groups>
 			<run>
 				<include name="@Web" />

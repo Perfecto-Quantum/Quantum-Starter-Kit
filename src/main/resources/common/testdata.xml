@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testdata>
 	<quantum>
-		<fw>Quantum Framework</fw>
+		<fw>Introducing Quantum Framework</fw>
 	</quantum>
 	<demo>
 		<websearch>
 			<dataset>
 				<recId>1</recId>
 				<searchKey>quantum perfecto</searchKey>
-				<searchResult>Quantum Framework</searchResult>
+				<searchResult>Quantum</searchResult>
 			</dataset>
 			<dataset>
 				<recId>2</recId>
-				<searchKey>perfecto quantum starter kit</searchKey>
-				<searchResult>GitHub</searchResult>
+				<searchKey>project-quantum quantum-starter-kit</searchKey>
+				<searchResult>Perfecto-Quantum</searchResult>
 			</dataset>
 		</websearch>
 	</demo>
