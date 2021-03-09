@@ -29,6 +29,7 @@
 	<test name="Web Scenarios Android Test" enabled="true"
 		thread-count="10">
 		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -41,6 +42,7 @@
 	</test>
 	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
 		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		 <parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<groups>
 			<run>
@@ -55,6 +57,7 @@
 
     <test name="IOS Expense Tracker Test" enabled="true">
         <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+         <parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"></parameter>
         <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
         <parameter name="driver.capabilities.iOSResign" value="true"/>
@@ -71,7 +74,8 @@
         </classes>
     </test>
     <test name="Android Expense Tracker Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="Galaxy S.*"></parameter>
+        <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+        <parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/android/ExpenseAppVer1.0.apk"></parameter>
         <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="driver.name" value="perfectoDriver"/>
