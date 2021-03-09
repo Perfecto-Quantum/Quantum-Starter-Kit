@@ -1,0 +1,10 @@
+login.emailNative.textfield=-ios predicate string=type == 'XCUIElementTypeTextField' AND name == 'login_email'
+login.headerTextNative.label=-ios predicate string=type == 'XCUIElementTypeStaticText' AND name == 'Email'
+login.passwordNative.textfield=-ios predicate string=type == 'XCUIElementTypeSecureTextField' AND name == 'login_password'
+login.loginNative.btn=-ios predicate string=type == 'XCUIElementTypeButton' AND name == 'login_login_btn'
+home.menu.btn=name=list_left_menu_btn
+home.add.btn=name=list_add_btn
+home.head.dropdown=name=edit_head
+home.amount.textfield=name=edit_amount
+home.save.btn=name=add_save_btn
+home.result.text=xpath=//*[@label='%s']

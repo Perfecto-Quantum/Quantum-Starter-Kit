@@ -1,0 +1,12 @@
+login.email.textfield=css=#login_email > input[name="login_email"]
+login.emailNative.textfield=id=io.perfecto.expense.tracker:id/login_email
+login.headerTextNative.label=id=io.perfecto.expense.tracker:id/tv_login_head
+login.passwordNative.textfield=id=io.perfecto.expense.tracker:id/login_password
+login.loginNative.btn=id=io.perfecto.expense.tracker:id/login_login_btn
+home.menu.btn=xpath=//*[@content-desc="Open Drawer"]
+home.add.btn=id=io.perfecto.expense.tracker:id/list_add_btn
+home.head.dropdown=id=io.perfecto.expense.tracker:id/input_layout_head
+home.flight.btn=xpath=//*[@text='Flight']
+home.amount.textfield=id=io.perfecto.expense.tracker:id/add_amount
+home.save.btn=id=io.perfecto.expense.tracker:id/layout_buttons
+home.result.text=xpath=//*[@text='%s']
