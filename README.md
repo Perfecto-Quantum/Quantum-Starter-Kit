@@ -16,6 +16,8 @@ There are several prerequisite dependencies you should install on your machine p
 
 * [Maven](https://maven.apache.org/)
 
+* Download the necessary app files from [here](https://github.com/PerfectoMobileSA/PerfectoJavaSample/tree/master/libs), upload it to your Perfecto Media Repository and configure that locator path to driver.capabilities.app capability in your testng xml file.
+
 Eclipse users should also install:
 
 1. [Maven Plugin](http://marketplace.eclipse.org/content/m2e-connector-maven-dependency-plugin)
@@ -34,7 +36,6 @@ TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
  
 #### Optional Installations
 * For source control management, you can install [git](https://git-scm.com/downloads).
-* To be able to interact with a real device from Perfecto cloud directly from your IDE, and use Perfecto Reporting, install [Perfecto CQ Lab Plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) for your IDE.
 
 ## Downloading the Quantum Project
 
