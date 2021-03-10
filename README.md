@@ -44,7 +44,7 @@ TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
 
 After downloading and unzipping the project to your computer, open it from your IDE by choosing the folder containing the pom.xml file (_Quantum-Starter-Kit-master_, you might consider renaming it).
 
-Look [here](https://github.com/PerfectoCode/Quantum/wiki/Project%20Layout) to understand the project layout, and find your way in it.
+Project directory structure is documented in the end of this page.
 
 **********************
 # Getting Started
