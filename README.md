@@ -31,6 +31,7 @@ IntelliJ IDEA users should also install:
 1. [Maven Plugin for IDEA](https://plugins.jetbrains.com/plugin/1166)
 
 2. [Cucumber Plugin (Community version only)](https://plugins.jetbrains.com/plugin/7212)
+    - If case after installing the above plugin you are still not able to navigate to the step definition code then install this plugin - (https://plugins.jetbrains.com/plugin/7213-cucumber-for-groovy)
 
 TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
  
@@ -144,8 +145,6 @@ Quantum has additional features to allow better customization to your specific a
 * Configure the [TestNG.xml](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File) to filter the tests to execute and the devices used in the test.
 
 Configuration of the [application properties](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/The%20application.properties%20file) and the [TestNG.xml file](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [creating customized steps](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Creating%20customized%20steps), require knowledge of Java, TestNG, and XPath.
-
-:information_source: The [Perfecto plugin](https://www.perfectomobile.com/ni/resources/downloads/add-ins-plugins-and-extensions) enables access to real devices and desktop Web sessions in the CQ Lab, as well as easy-to-use [Object Spy](https://community.perfectomobile.com/series/18628) for mapping the application objects in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository).
 
 **********************
 # Project Directory Structure
