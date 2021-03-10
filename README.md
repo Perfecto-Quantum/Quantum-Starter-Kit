@@ -14,7 +14,7 @@ There are several prerequisite dependencies you should install on your machine p
 
 * An IDE to write your tests on - [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
 
-* [Maven](https://maven.apache.org/)
+* [Maven](https://maven.apache.org/) (Optional - Needed only for command line executions as IDEs have Maven in-built.)
 
 * Download the necessary app files from [here](https://github.com/PerfectoMobileSA/PerfectoJavaSample/tree/master/libs), upload it to your Perfecto Media Repository and configure that locator path to driver.capabilities.app capability in your testng xml file.
 
@@ -25,14 +25,13 @@ Eclipse users should also install:
 
 2. [TestNG Plugin](http://testng.org/doc/download.html)
 
-3. [QAF Cucumber Plugin](https://marketplace.eclipse.org/content/qaf-bdd-editors). Or go to  install new software option in eclipse, and download from https://qmetry.github.io/qaf/editor/bdd/eclipse/
+3. QAF BDD Plugin - Or go to install new software option in eclipse, and download from this url https://qmetry.github.io/qaf/editor/bdd/eclipse/
+    In case, of network constraints, one can follow the instruction mentioned in [QAF BDD Offline](https://developers.perfectomobile.com/display/PD/Quantum+framework+introduction#expand-InstallanofflineversionoftheQAFBDDplugininEclipse)
 
 IntelliJ IDEA users should also install:
 
-1. [Maven Plugin for IDEA](https://plugins.jetbrains.com/plugin/1166)
-
-2. [Cucumber Plugin (Community version only)](https://plugins.jetbrains.com/plugin/7212)
-    - If case after installing the above plugin you are still not able to navigate to the step definition code then install this plugin - (https://plugins.jetbrains.com/plugin/7213-cucumber-for-groovy)
+1. [Cucumber Plugin (Community version only)](https://plugins.jetbrains.com/plugin/7212)
+    - In case after installing the above plugin you are still not able to navigate to the step definition code then install this plugin -               [Cucumber for Groovy Plugin](https://plugins.jetbrains.com/plugin/7213-cucumber-for-groovy)
 
 TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
  
@@ -140,14 +139,23 @@ All the last execution tests are listed in the Reporting execution center. The f
 ## Advanced Quantum features
 
 Quantum has additional features to allow better customization to your specific application:
+* Understanding driver names and capabilities - [Link](https://developers.perfectomobile.com/display/PD/Quantum+driver+names+and+capabilities)
+* Understand configuration manager - [Managing Configuration Manager](https://developers.perfectomobile.com/display/PD/ConfigurationManager+%7C+Pass+elements+across+steps+and+test+cases)
 * Create your own [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) file to match your application objects. 
 * Create a [[customized steps|Creating customized steps]] file to ease performing actions common in your application operation.
 * Write tests using either [BDD](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/BDD-Implementation) or [Java](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Java-Implementation).
 * Configure the [TestNG.xml](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File) to filter the tests to execute and the devices used in the test.
+* Configuration of the [application properties](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/The%20application.properties%20file) and the [TestNG.xml file](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [creating customized steps](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Creating%20customized%20steps), require knowledge of Java, TestNG, and XPath.
 
-Configuration of the [application properties](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/The%20application.properties%20file) and the [TestNG.xml file](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Quantum%20TestNG%20File), as well as creating object definitions in the [Object Repository](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Object%20Repository) and [creating customized steps](https://github.com/Perfecto-Quantum/Quantum-Starter-Kit/wiki/Creating%20customized%20steps), require knowledge of Java, TestNG, and XPath.
+
+## Quantum Course
+Automation Architects and developers should go through this Quantum Course as it deep dives in technical depth of Quantum features and discusses samples of advanced features of Quantum. 
+[Course Link](https://developers.perfectomobile.com/display/PSC/Quantum)
+
+
 
 **********************
+
 # Project Directory Structure
 ```
 .
