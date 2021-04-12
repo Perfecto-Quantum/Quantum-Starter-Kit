@@ -20,7 +20,7 @@ public class GoogleStepDefs {
 
 	@Given("^I am on Google Search Page$")
 	public void I_am_on_Google_Search_Page() throws Throwable {
-		new WebDriverTestBase().getDriver().get("http://www.google.com/");
+		new WebDriverTestBase().getDriver().get("https://www.google.com/");
 	}
 
 	@When("^I search for \"([^\"]*)\"$")
