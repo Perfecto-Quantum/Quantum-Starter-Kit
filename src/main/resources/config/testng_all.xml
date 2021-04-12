@@ -33,6 +33,9 @@
 		<groups>
 			<run>
 				<include name="@Web" />
+				<include name="@first" />
+				<include name="@sampleTestCase" />
+				<include name="@locators" />
 			</run>
 		</groups>
 		<classes>
@@ -47,6 +50,9 @@
 		<groups>
 			<run>
 				<include name="@Web" />
+				<include name="@first" />
+				<include name="@sampleTestCase" />
+				<include name="@locators" />
 			</run>
 		</groups>
 		<classes>
