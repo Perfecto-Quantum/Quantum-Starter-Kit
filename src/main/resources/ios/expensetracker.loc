@@ -1,3 +1,4 @@
+login.email.textFieldValue=-ios predicate string=type == 'XCUIElementTypeTextField' AND value == 'test@perfecto.com'
 login.emailNative.textfield=-ios predicate string=type == 'XCUIElementTypeTextField' AND name == 'login_email'
 login.headerTextNative.label=-ios predicate string=type == 'XCUIElementTypeStaticText' AND name == 'Email'
 login.passwordNative.textfield=-ios predicate string=type == 'XCUIElementTypeSecureTextField' AND name == 'login_password'

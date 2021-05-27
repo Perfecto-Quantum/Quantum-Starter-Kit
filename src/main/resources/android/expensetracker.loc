@@ -1,3 +1,4 @@
+login.email.textFieldValue=xpath=//*[@text='test@perfecto.com']
 login.email.textfield=css=#login_email > input[name="login_email"]
 login.emailNative.textfield=id=io.perfecto.expense.tracker:id/login_email
 login.headerTextNative.label=id=io.perfecto.expense.tracker:id/tv_login_head

@@ -39,6 +39,9 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 	@FindBy(locator = "login.loginNative.btn")
 	private QAFWebElement loginlNativeButton;
 	
+	@FindBy(locator = "login.email.textFieldValue")
+	private QAFWebElement loginlEmailTextFieldValue;
+	
 	public void verifyExpenseTrackerLoginScreen() {
 		Map<String, Object> params = new HashMap<>();
 		params.put("content", "Email");
@@ -60,6 +63,7 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 	
 	public void loginNative(String email, String password) {
 		emailNativeTextfield.sendKeys(email);
+		ReportUtils.logAssert("Email was entered as expected", loginlEmailTextFieldValue.getText().equalsIgnoreCase(email));
 		passwordlNativeTextfield.sendKeys(password);
 		DriverUtils.getAppiumDriver().hideKeyboard();
 		loginlNativeButton.click();
