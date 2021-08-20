@@ -4,17 +4,17 @@ Feature: Google Search
   @WebSearch
   Scenario: Search Quantum
     Given I am on Google Search Page
-    When I search for "quantum perfecto"
-    Then it should have "Quantum" in search results
+    When I search for "perfecto mobile quantum"
+    Then it should have "perfecto" in search results
     Then I am on Google Search Page
 
   @WebResultsList
   Scenario: Search Quantum with results
     Given I am on Google Search Page
-    When I search for "project-quantum quantum-starter-kit"
+    When I search for "perfecto mobile quantum"
     Then it should have following search results:
-      | Quantum-Starter |
-      | Perfecto-Quantum |
+      | perfecto |
+      | Quantum |
 
   @WebDD
   Scenario Outline: Search Keyword Inline Data
@@ -24,8 +24,8 @@ Feature: Google Search
 
     Examples:
       | recId | recDescription 	| searchKey               | searchResult                  |
-      | 1     | First Data Set	| quantum perfecto        | Quantum |
-      | 2     | Second Data Set 	|project-quantum quantum-starter-kit| Perfecto-Quantum |
+      | 1     | First Data Set	| perfecto mobile quantum       | Quantum |
+      | 2     | Second Data Set 	|perfecto mobile quantum| perfecto |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data
@@ -52,8 +52,8 @@ Feature: Google Search
     | title                                | author      |
     | The Lion, the Witch and the Wardrobe | C.S. Lewis  |
     | In the Garden of Beasts              | Erik Larson |
-    When I search for "quantum perfecto"
-    Then it should have "Quantum Framework" in search results
+    When I search for "perfecto mobile quantum"
+    Then it should have "perfecto" in search results
      Examples:
       | recId | recDescription 	| searchKey               | searchResult                  |
-      | 1     | First Data Set	| quantum perfecto        | Quantum Framework |
+      | 1     | First Data Set	| perfecto mobile quantum        | perfecto |

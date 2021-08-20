@@ -7,13 +7,13 @@
 		<websearch>
 			<dataset>
 				<recId>1</recId>
-				<searchKey>quantum perfecto</searchKey>
-				<searchResult>Quantum</searchResult>
+				<searchKey>perfecto mobile quantum</searchKey>
+				<searchResult>perfecto</searchResult>
 			</dataset>
 			<dataset>
 				<recId>2</recId>
-				<searchKey>project-quantum quantum-starter-kit</searchKey>
-				<searchResult>Perfecto-Quantum</searchResult>
+				<searchKey>perfecto mobile quantum</searchKey>
+				<searchResult>Quantum</searchResult>
 			</dataset>
 		</websearch>
 	</demo>

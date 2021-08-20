@@ -40,6 +40,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 	public void verifyResult(String result){
 		QAFExtendedWebElement searchResult = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("search.result.link"), result));
+		searchResult.waitForVisible(5000);
 		ReportUtils.logAssert("Expected result: " + result, searchResult.isDisplayed());	
 	}
 
@@ -47,6 +48,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		QAFExtendedWebElement searchResultElement;
 		for (String result : results) {
 			QAFExtendedWebElement searchResult = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("search.result.link"), result));
+			searchResult.waitForVisible(5000);
 			ReportUtils.logAssert("Expected result: " + result, searchResult.isDisplayed());
 		}
 	}
