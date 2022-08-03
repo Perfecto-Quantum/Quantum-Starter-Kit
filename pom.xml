@@ -9,7 +9,7 @@
 
 	<properties>
 		<testngXmlDir>src/main/resources/config</testngXmlDir>
-		<testngXmlFile>testng_all.xml</testngXmlFile>
+		<testngXmlFile>testng_appium.xml</testngXmlFile>
 		<skipTests>false</skipTests>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<reportium-sdk.version>2.3</reportium-sdk.version>

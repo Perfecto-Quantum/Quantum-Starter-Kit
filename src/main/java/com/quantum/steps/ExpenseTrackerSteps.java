@@ -24,20 +24,5 @@ public class ExpenseTrackerSteps {
 	public void iEnterLoginDetilsInNativeLoginScreen(String email, String password) {
 		new ExpenseTrackerLoginPage().loginNative(email, password);
 	}
-	
-	
-	@Then("I should see expense tracker home screen")
-	public void iShouldSeeExpenseTrackerHomeScreen() {
-		new ExpenseTrackerHomePage().verifyHomeScreen();
-	}
-	
-	@When("I enter expense details and save")
-	public void iEnterExpenseDetailsAndSave() {
-		new ExpenseTrackerHomePage().enterExpenseDetails();
-	}
-	
-	@Then("I should see error popup")
-	public void iShouldSeeErrorPopup() {
-		new ExpenseTrackerHomePage().verifyPopupText(); 
-	}
+
 }

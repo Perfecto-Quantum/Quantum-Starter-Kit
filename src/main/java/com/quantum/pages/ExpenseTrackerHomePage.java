@@ -6,9 +6,7 @@ import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
-import com.quantum.utils.DeviceUtils;
-import com.quantum.utils.DriverUtils;
-import com.quantum.utils.ReportUtils;
+
 
 public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
@@ -19,52 +17,41 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 
 
-	@FindBy(locator = "home.menu.btn")
-	private QAFExtendedWebElement menuBtn;
+	@FindBy(locator = "first.screen.title.text")
+	private QAFExtendedWebElement firstScreenTitle;
 
-	@FindBy(locator = "home.add.btn")
-	private QAFExtendedWebElement addBtn;
-	
-	@FindBy(locator = "home.head.dropdown")
-	private QAFExtendedWebElement headDropdown;
+	@FindBy(locator = "first.screen.text")
+	private QAFExtendedWebElement firstScreenText;
 
-	@FindBy(locator = "home.flight.btn")
-	private QAFExtendedWebElement flightOption;
-	
-	@FindBy(locator = "home.amount.textfield")
-	private QAFExtendedWebElement amountInput;
-	
-	@FindBy(locator = "home.save.btn")
-	private QAFExtendedWebElement savebtn;
-	
-	
-	public void verifyHomeScreen() {
-		ReportUtils.logAssert("Verify Home Screen.", menuBtn.isDisplayed());
-	}
-	
-	public void enterExpenseDetails() {
-		addBtn.click();
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
-		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
-			headDropdown.click();
-			flightOption.click();
-		}else {
-			headDropdown.sendKeys("Flight");
-		}
-		amountInput.sendKeys("100");
-		savebtn.click();
-	}
-	
-	public void verifyPopupText() {
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
-		String result = "";
-		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
-			result = "Select Currency";
-		}else {
-			result = "Please enter valid category";
-		}
-		ReportUtils.logAssert("Verify Popup Text.", new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("home.result.text"), result)).isDisplayed());
-		
+	@FindBy(locator = "first.screen.next.button")
+	private QAFExtendedWebElement nextBtn;
+
+	@FindBy(locator = "second.screen.text")
+	private QAFExtendedWebElement secondScreenText;
+
+	@FindBy(locator = "second.screen.previous.button")
+	private QAFExtendedWebElement previousBtn;
+
+
+	public void validateFirstScreen() {
+		firstScreenTitle.waitForVisible(1000);
+		firstScreenTitle.isDisplayed();
+		firstScreenText.isDisplayed();
+		nextBtn.isDisplayed();
 	}
 
+	public void clickNextButton() {
+		nextBtn.click();
+	}
+
+	public void validateSecondScreen () {
+		secondScreenText.waitForVisible(1000);
+		secondScreenText.isDisplayed();
+		previousBtn.isDisplayed();
+	}
+
+	public void clickPreviousButton () {
+		previousBtn.waitForVisible(1000);
+		previousBtn.isDisplayed();
+	}
 }

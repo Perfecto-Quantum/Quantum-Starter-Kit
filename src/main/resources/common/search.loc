@@ -1,6 +1,6 @@
-#locator repository for search page
-search.text.box = {\"locator\":\"name=q\",\"desc\":\"Search Text Box\"}
-search.option = {\"locator\":\"xpath=(//*[text()='%s'])[1]",\"desc\":\"search options in google\"}
-search.result.link = {\"locator\":\"partialLink=%s",\"desc\":\"search results partial link in google\"}
-#The below sample syntax used below is called alternate locator strategy. The element will be searched using the first locator and if there is no element then the second locator will be tried.
-#search.button=["xpath=//input[@aria-label='Google Search']","xpath=//button[@aria-label='Google Search']"]
+
+first.screen.title.text=xpath=//*[@text="First Fragment"]
+first.screen.text=xpath=//*[@resource-id="com.tts.aritytestapp:id/textview_first"]
+first.screen.next.button=xpath=//*[@resource-id="com.tts.aritytestapp:id/button_first"]
+second.screen.text=xpath=//*[@text="Second Fragment"]
+second.screen.previous.button=xpath=//*[@resource-id="com.tts.aritytestapp:id/button_second"]
