@@ -28,6 +28,7 @@
 
     <test name="Android Expense Tracker Test" enabled="true">
         <parameter name="driver.capabilities.model" value="(?!.*Tab).*"></parameter>
+	<parameter name="driver.capabilities.platformName" value="Android"/>
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"></parameter>
         <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
