@@ -28,8 +28,8 @@
 	</test>
 	<test name="Web Scenarios Android Test" enabled="true"
 		thread-count="10">
-		<parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
-		<parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':5}" />
+		<parameter name="driver.capabilities.model" value="(?!.*Tab).*"></parameter>
+		<parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':5}" />
 		<groups>
 			<run>
 				<include name="@Web" />
