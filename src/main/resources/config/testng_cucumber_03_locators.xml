@@ -7,7 +7,7 @@
 
 	<test name="Locators Android Test" enabled="true"
 		thread-count="10">
-		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<parameter name="perfecto.capabilities.model" value="Galaxy.*"></parameter>
 		<groups>
 			<run>
 				<include name="@locators" />
@@ -19,7 +19,7 @@
 		</classes>
 	</test>
 	<test name="Locators iOS Test" enabled="true" thread-count="10">
-		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
 		<groups>
 			<run>
 				<include name="@locators" />
