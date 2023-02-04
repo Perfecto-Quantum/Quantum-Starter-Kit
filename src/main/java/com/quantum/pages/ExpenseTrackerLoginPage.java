@@ -65,7 +65,12 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 		emailNativeTextfield.sendKeys(email);
 		ReportUtils.logAssert("Email was entered as expected", loginlEmailTextFieldValue.getText().equalsIgnoreCase(email));
 		passwordlNativeTextfield.sendKeys(password);
-		DriverUtils.getAppiumDriver().hideKeyboard();
+		if(DriverUtils.isIOS()) {
+			DriverUtils.getIOSDriver().hideKeyboard();
+		}else {
+			DriverUtils.getAndroidDriver().hideKeyboard();
+		}
+		
 		loginlNativeButton.click();
 	}
 }
