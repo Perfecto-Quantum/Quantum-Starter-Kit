@@ -31,6 +31,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 
 	public void search(String searchKey){
+		searchTextBox.waitForEnabled(10000);
 		searchTextBox.clear();
 		searchTextBox.sendKeys(searchKey);
 		// The following element is an example of creating run time objects on the fly
