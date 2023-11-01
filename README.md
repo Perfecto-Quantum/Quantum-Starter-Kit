@@ -10,9 +10,9 @@ Begin with installing the dependencies below, and continue with the Getting Star
 ### Dependencies
 There are several prerequisite dependencies you should install on your machine prior to starting to work with Quantum:
 
-* [Java 8](https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html)
+* [Java 8](https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html)
 
-* An IDE to write your tests on - [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
+* An IDE to write your tests on - [Eclipse IDE for Java Developers](https://www.eclipse.org/downloads/packages/) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
 
 * [Maven](https://maven.apache.org/) (Optional - Needed only for command line executions as IDEs have Maven in-built.)
 
