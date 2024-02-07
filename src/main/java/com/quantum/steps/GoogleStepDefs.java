@@ -1,5 +1,6 @@
 package com.quantum.steps;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -7,6 +8,7 @@ import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.quantum.pages.GooglePage;
+import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.ReportUtils;
 
 import cucumber.api.java.en.Given;
@@ -20,7 +22,21 @@ public class GoogleStepDefs {
 
 	@Given("^I am on Google Search Page$")
 	public void I_am_on_Google_Search_Page() throws Throwable {
+		try {
+			Map<String, Object> params = new HashMap<>();
+			params.put("label", "Continue");
+			params.put("timeout", "5");
+			params.put("threshold", "95");
+			DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click", params);
+		} catch (Exception e) { }
 		new WebDriverTestBase().getDriver().get("https://www.google.com/");
+		try {
+			Map<String, Object> params = new HashMap<>();
+			params.put("label", "No Thanks");
+			params.put("timeout", "5");
+			params.put("threshold", "95");
+			DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click", params);
+		} catch (Exception e) { }
 	}
 
 	@When("^I search for \"([^\"]*)\"$")
