@@ -28,10 +28,10 @@
 		</classes>
 	</test>
 	<test name="Web Scenarios Android Test" enabled="true"
-		thread-count="5">
+		thread-count="3">
 		<parameter name="driver.capabilities.model" value="(?!.*Tab).*"></parameter>
 		<parameter name="driver.capabilities.platformName" value="Android"/>
-		<parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':10}" />
+		<parameter name="perfecto.additional.capabilities" value="{'openDeviceTimeout':15}" />
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -47,7 +47,7 @@
 	</test>
 	<test name="Web Scenarios iOS Test" enabled="true" thread-count="5">
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
-		 <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':10}" />
+		 <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
  		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<groups>
