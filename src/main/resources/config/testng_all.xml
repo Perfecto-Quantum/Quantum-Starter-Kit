@@ -65,10 +65,10 @@
 
     <test name="IOS Expense Tracker Test" enabled="true">
         <parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
-         <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':5}" />
+         <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':5, 'enableAppiumBehavior': true}" />
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"></parameter>
         <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
-        <parameter name="driver.capabilities.iOSResign" value="true"/>
+        <parameter name="perfecto.capabilities.iOSResign" value="true"/>
         <parameter name="driver.name" value="perfectoDriver"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
@@ -121,8 +121,8 @@
     <test name="iOS Simulator Expense Tracker Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
-		<parameter name="driver.capabilities.platformVersion" value="14.3"/>
-		<parameter name="driver.capabilities.deviceName" value="iPhone 11"/>
+		<parameter name="driver.capabilities.platformVersion" value="17.4"/>
+		<parameter name="driver.capabilities.deviceName" value="iPhone 15 Pro Max"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp.zip"/>
 		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
 		<parameter name="driver.name" value="perfectoDriver"/>

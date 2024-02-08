@@ -63,8 +63,8 @@
     <test name="iOS Simulator Expense Tracker Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
-		<parameter name="driver.capabilities.platformVersion" value="14.3"/>
-		<parameter name="driver.capabilities.deviceName" value="iPhone 11"/>
+		<parameter name="driver.capabilities.platformVersion" value="17.4"/>
+		<parameter name="driver.capabilities.deviceName" value="iPhone 15 Pro Max"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp.zip"/>
 		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
 		<parameter name="env.resources" value="src/main/resources/ios"/>
