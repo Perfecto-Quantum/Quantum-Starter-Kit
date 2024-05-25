@@ -9,16 +9,16 @@
     <!-- Set driver.name value to perfectoDriver       -->
     <parameter name="driver.name" value="perfectoDriver"/>
 
-    <test name="IOS Expense Tracker Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+    <test name="IOS Expense Tracker Test" enabled="false">
+        <parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"></parameter>
         <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
-        <parameter name="driver.capabilities.iOSResign" value="true"/>
+        <parameter name="driver.capabilities.iOSResign" value="false"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
         <groups>
             <run>
-                <include name="@appium"/>
+                <include name="@expenseTracker"/>
             </run>
         </groups>
         <classes>
@@ -26,15 +26,14 @@
         </classes>
     </test>
 
-    <test name="Android Expense Tracker Test" enabled="true">
-        <parameter name="driver.capabilities.model" value="(?!.*Tab).*"></parameter>
-	<parameter name="driver.capabilities.platformName" value="Android"/>
-        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"></parameter>
-        <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
+    <test name="Android Expense Tracker Test" enabled="false">
+        <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
+        <parameter name="perfecto.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"></parameter>
+        <parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
-                <include name="@appium"/>
+                <include name="@expenseTracker"/>
             </run>
         </groups>
         <classes>
@@ -43,12 +42,12 @@
     </test>
     
     <test name="Android Emulator Expense Tracker Test" enabled="true">
-        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
-		<parameter name="driver.capabilities.platformName" value="Android"/>
-		<parameter name="driver.capabilities.platformVersion" value="11"/>
-		<parameter name="driver.capabilities.model" value="pixel 4"/>
+        <parameter name="perfecto.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
+		<parameter name="perfecto.capabilities.platformName" value="Android"/>
+		<parameter name="perfecto.capabilities.platformVersion" value="13"/>
+		<parameter name="perfecto.capabilities.model" value="pixel 6"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
-		<parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
+		<parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
 		<parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
             <run>
@@ -60,11 +59,11 @@
         </classes>
     </test>
     
-    <test name="iOS Simulator Expense Tracker Test" enabled="true">
-        <parameter name="driver.additional.capabilities" value="{'useVirtualDevice':true}" />
+    <test name="iOS Simulator Expense Tracker Test" enabled="false">
+        <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':false}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
-		<parameter name="driver.capabilities.platformVersion" value="17.4"/>
-		<parameter name="driver.capabilities.deviceName" value="iPhone 15 Pro Max"/>
+		<parameter name="driver.capabilities.platformVersion" value="latest"/>
+		<parameter name="driver.capabilities.deviceName" value="iPhone 15"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp.zip"/>
 		<parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
 		<parameter name="env.resources" value="src/main/resources/ios"/>

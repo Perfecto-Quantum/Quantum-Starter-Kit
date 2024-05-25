@@ -6,7 +6,6 @@ import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
-import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.DriverUtils;
 import com.quantum.utils.ReportUtils;
 
@@ -44,7 +43,9 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	
 	public void enterExpenseDetails() {
 		addBtn.click();
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
+		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
+//				.getPlatformName().name();
+//				getPlatformName().name();
 		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
 			headDropdown.click();
 			flightOption.click();
@@ -56,7 +57,8 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 	
 	public void verifyPopupText() {
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
+		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
+//				.getPlatformName().name();
 		String result = "";
 		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
 			result = "Select Currency";

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" parallel="tests">
+    <listeners>
+        <listener class-name="com.quantum.listeners.QuantumReportiumListener"/>
+    </listeners>
+
+    <!-- To use actual AppiumDriver classes defined    -->
+    <!-- by driverClass property in env.resources dirs -->
+    <!-- Set driver.name value to perfectoDriver       -->
+    <parameter name="driver.name" value="perfectoDriver"/>
+    
+   
+    <test name="Android Expense Tracker Test" enabled="true">
+        <parameter name="perfecto.capabilities.deviceName" value="1C301FDEE008VX"/>
+        <parameter name="perfecto.capabilities.appPackage" value="com.citi.privatebank.inview.client.uat"/>
+        <!-- <parameter name="perfecto.capabilities.noReset" value="true"/>
+         <parameter name="perfecto.capabilities.fullReset" value="false"/> 
+          <parameter name="perfecto.capabilities.enableAppiumBehavior" value="true"/>-->
+          <parameter name="perfecto.capabilities.platformName" value="Android"/>
+          <parameter name="perfecto.capabilities.automationName" value="UiAutomator2"/>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+        <groups>
+            <run>
+                <include name="@expenseTracker"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+        </classes>
+    </test>
+    
+</suite>
