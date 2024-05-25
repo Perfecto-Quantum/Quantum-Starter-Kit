@@ -18,7 +18,7 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios iOS Test" enabled="false" thread-count="10">
+	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<groups>

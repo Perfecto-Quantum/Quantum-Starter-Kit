@@ -3,16 +3,16 @@
 ![CircleCI status](https://circleci.com/gh/Perfecto-Quantum/Quantum-Starter-Kit.svg?style=shield "CircleCI status")
 
 # Quantum Starter Kit
-This Quantum starter kit is designed to get you up and running using the Quantum framework (sponsored by [Perfecto](https://www.perfecto.io) and powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber] (https://cucumber.io/).
+This Quantum starter kit is designed to get you up and running using the Quantum framework (sponsored by [Perfecto](https://www.perfecto.io) and powered by [QAF](https://github.com/qmetry/qaf)) within few simple steps, and enable you to start writing your tests using simple [Cucumber](https://cucumber.io/).
 
 Begin with installing the dependencies below, and continue with the Getting Started procedure below.
 
 ### Dependencies
 There are several prerequisite dependencies you should install on your machine prior to starting to work with Quantum:
 
-* [Java 8](https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html)
+* [Java 8](https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html)
 
-* An IDE to write your tests on - [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
+* An IDE to write your tests on - [Eclipse IDE for Java Developers](https://www.eclipse.org/downloads/packages/) or [IntelliJ](https://www.jetbrains.com/idea/download/#)
 
 * [Maven](https://maven.apache.org/) (Optional - Needed only for command line executions as IDEs have Maven in-built.)
 
@@ -72,7 +72,7 @@ The sample opens device browser at Google, searches for Perfecto Mobile, enters 
 
 1. Download the Quantum-Starter-Kit as zip to your computer, and rename it.
 2. Open the project from its _pom.xml_ file, to open it as a Maven project with all the required dependencies.
-3. Define your CQ Lab name, username, and password in the _application.properties_ file.
+3. Update your CQ Lab name under remote.server, and your Perfecto's security token in the _application.properties_ file.
 4. Add a _.feature_ file under the _scenarios/_ folder, and proceed to create your test using the [test writing guidelines](README.md#test-writing-guidelines).
 5. Add a _.loc_ file under the _common/_ folder, and proceed to create the Object Repository using the [Object Repository creation guidelines](README.md#object-repository-creation-guidelines).
 6. Clean your test from the object definitions until all lines become syntax highlighted.
@@ -129,7 +129,7 @@ Let's proceed to naming your tests, so you can easily detect them in Perfecto Re
 1. In each of the feature files (the samples), set the Feature line at the top to<br>`Feature: community search sample`
 2. Run your test as before.
 3. To view the test execution report within Perfecto Reporting:
-   * Enter your CQ Lab at https://<your CQ Lab>.perfectomobile.com.
+   * Enter your CQ Lab at https://\<your CQ Lab\>.perfectomobile.com.
    * Select the Reporting tab, and click the link to Perfecto Reporting (on the right).
    * Login using your CQ Lab credentials.<br><br>
 All the last execution tests are listed in the Reporting execution center. The feature name you set in the sample before, appears as the test name on the left. 

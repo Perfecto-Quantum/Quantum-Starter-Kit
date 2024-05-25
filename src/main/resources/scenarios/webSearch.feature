@@ -1,17 +1,17 @@
 @Web
 Feature: Google Search
 
-  @WebSearch @retry @TC-1 @web1
+  @WebSearch
   Scenario: Search Quantum
     Given I am on Google Search Page
-    When I search for "perfecto mobile quantum"
+    When I search for "perfecto mobile quantum framework"
     Then it should have "perfecto" in search results
     Then I am on Google Search Page
 
   @WebResultsList
   Scenario: Search Quantum with results
     Given I am on Google Search Page
-    When I search for "perfecto mobile quantum"
+    When I search for "perfecto mobile quantum framework"
     Then it should have following search results:
       | perfecto |
       | Quantum |
@@ -23,9 +23,9 @@ Feature: Google Search
     Then it should have "<searchResult>" in search results
 
     Examples:
-      | recId | recDescription 	| searchKey               | searchResult                  |
-      | 1     | First Data Set	| perfecto mobile quantum       | Quantum |
-      | 2     | Second Data Set 	|perfecto mobile quantum| perfecto |
+      | recId | recDescription 	| searchKey                          | searchResult   |
+      | 1     | First Data Set	| perfecto mobile quantum framework  | Quantum        |
+      | 2     | Second Data Set |perfecto mobile quantum framework   | perfecto       |
 
   @WebDDxml
   Scenario Outline: Search Keyword XML Data
@@ -52,8 +52,8 @@ Feature: Google Search
     | title                                | author      |
     | The Lion, the Witch and the Wardrobe | C.S. Lewis  |
     | In the Garden of Beasts              | Erik Larson |
-    When I search for "perfecto mobile quantum"
+    When I search for "perfecto mobile quantum framework"
     Then it should have "perfecto" in search results
      Examples:
-      | recId | recDescription 	| searchKey               | searchResult                  |
-      | 1     | First Data Set	| perfecto mobile quantum        | perfecto |
+      | recId | recDescription 	| searchKey                        | searchResult |
+      | 1     | First Data Set	| perfecto mobile quantum framework| perfecto     |

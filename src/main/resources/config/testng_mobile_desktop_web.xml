@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Web Demo Suite" verbose="0" parallel="tests"
-	thread-count="50">
+	thread-count="100">
 	<listeners>
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
-		<listener class-name="com.quantum.listeners.FailedTestSuiteListener" />
 	</listeners>
 
-	<test name="Web Scenarios Chrome Test" enabled="true" parallel="methods" thread-count="1">
+	<test name="Web Scenarios Chrome Test" enabled="false">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
 		<parameter name="perfecto.capabilities.platformVersion"
 			value="10"></parameter>
@@ -15,44 +14,8 @@
 			value="latest"></parameter>
 		<parameter name="perfecto.capabilities.resolution" value="1280x1024"></parameter>
 		<parameter name="perfecto.capabilities.location" value="US East"></parameter>
-		<!--<parameter name="perfecto.capabilities.deviceType" value="Web"></parameter>-->
-		<parameter name="env.resources" value="src/main/resources/common" />
-		<groups>
-			<run>
-				<include name="@web1" />
-			</run>
-		</groups>
-		<classes>
-			<class
-				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
-	
-	<test name="Web Scenarios Chrome - 1 Test" enabled="false" parallel="methods" thread-count="1">
-		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
-		<parameter name="perfecto.capabilities.platformVersion"
-			value="10"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
-		<parameter name="perfecto.capabilities.browserVersion"
-			value="latest-1"></parameter>
-		<parameter name="perfecto.capabilities.resolution" value="1280x1024"></parameter>
-		<parameter name="perfecto.capabilities.location" value="US East"></parameter>
 		<parameter name="perfecto.capabilities.deviceType" value="Web"></parameter>
 		<parameter name="env.resources" value="src/main/resources/common" />
-		<groups>
-			<run>
-				<include name="@retry" />
-			</run>
-		</groups>
-		<classes>
-			<class
-				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
-		</classes>
-	</test>
-	
-	<test name="Web Scenarios Android Test" enabled="false"
-		thread-count="10">
-		<parameter name="perfecto.capabilities.model" value="Galaxy.*"></parameter>
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -63,8 +26,21 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios iOS Test" enabled="false" thread-count="10">
-		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
+	<test name="Web Scenarios Android Test" enabled="true"
+		thread-count="10">
+		<parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+		<groups>
+			<run>
+				<include name="@Web" />
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
+		<parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<groups>
 			<run>

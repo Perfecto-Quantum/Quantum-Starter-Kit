@@ -2,6 +2,7 @@ package com.quantum.pages;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 
@@ -11,6 +12,7 @@ import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
+import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.DriverUtils;
 import com.quantum.utils.ReportUtils;
 
@@ -18,7 +20,8 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 
 	@Override
 	protected void openPage(PageLocator locator, Object... args) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	@FindBy(locator = "login.email.textfield")
@@ -62,11 +65,11 @@ public class ExpenseTrackerLoginPage extends WebDriverBaseTestPage<WebDriverTest
 		emailNativeTextfield.sendKeys(email);
 		ReportUtils.logAssert("Email was entered as expected", loginlEmailTextFieldValue.getText().equalsIgnoreCase(email));
 		passwordlNativeTextfield.sendKeys(password);
-//		if(DriverUtils.isIOS()) {
-//			DriverUtils.getIOSDriver().hideKeyboard();
-//		}else {
-//			DriverUtils.getAndroidDriver().hideKeyboard();
-//		}
+		if(DriverUtils.isIOS()) {
+			DriverUtils.getIOSDriver().hideKeyboard();
+		}else {
+			DriverUtils.getAndroidDriver().hideKeyboard();
+		}
 		
 		loginlNativeButton.click();
 	}
