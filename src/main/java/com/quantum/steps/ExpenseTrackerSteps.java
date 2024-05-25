@@ -1,21 +1,9 @@
 package com.quantum.steps;
 
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.quantum.pages.ExpenseTrackerHomePage;
 import com.quantum.pages.ExpenseTrackerLoginPage;
-import com.quantum.utils.DriverUtils;
 
-import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
