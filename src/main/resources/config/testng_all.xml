@@ -5,7 +5,7 @@
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
 	</listeners>
 
-	<test name="Web Scenarios Chrome Test" enabled="true" verbose="5">
+	<test name="Web Scenarios Chrome Test" enabled="true" verbose="10">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
 		<parameter name="perfecto.capabilities.platformVersion"
 			value="10"></parameter>
@@ -18,7 +18,7 @@
 		<parameter name="env.resources" value="src/main/resources/common" />
 		<groups>
 			<run>
-				<include name="@WebDD" />
+				<include name="@Web" />
 			</run>
 		</groups>
 		<classes>
