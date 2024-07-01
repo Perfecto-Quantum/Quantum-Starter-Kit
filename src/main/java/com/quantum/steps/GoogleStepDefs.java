@@ -9,6 +9,7 @@ import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.quantum.pages.GooglePage;
 import com.quantum.utils.DeviceUtils;
+import com.quantum.utils.DriverUtils;
 import com.quantum.utils.ReportUtils;
 
 import io.cucumber.java.en.Given;
@@ -34,6 +35,8 @@ public class GoogleStepDefs {
 		DeviceUtils.getQAFDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		DeviceUtils.getQAFDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
 		
+		System.out.println(DriverUtils.getDriver().getCapabilities().getCapability("browserName"));
+		System.out.println(DriverUtils.getDriver().getCapabilities().getBrowserName());
 		
 		new WebDriverTestBase().getDriver().get("https://www.google.com/");
 	}

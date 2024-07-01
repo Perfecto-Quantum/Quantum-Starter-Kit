@@ -10,7 +10,7 @@ Feature: Google Search
     #for csv, txt, xls files specify datafile location
     Examples: {'datafile' : 'src/main/resources/data/testData.csv'}
 
-  @WebSearch @retry @TC-1 @web1
+  @WebSearch @retry @TC-1
   Scenario: Search Quantum
     Given I am on Google Search Page
     When I search for "perfecto mobile quantum"

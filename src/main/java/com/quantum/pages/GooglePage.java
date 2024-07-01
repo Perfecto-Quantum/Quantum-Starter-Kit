@@ -10,7 +10,7 @@ import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.util.PropertyUtil;
-import com.quantum.utils.ReportUtils;
+import com.quantum.utils.*;
 
 
 public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
