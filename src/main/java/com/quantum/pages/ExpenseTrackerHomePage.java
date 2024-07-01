@@ -6,17 +6,13 @@ import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
-import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.DriverUtils;
 import com.quantum.utils.ReportUtils;
 
 public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 	@Override
-	protected void openPage(PageLocator locator, Object... args) {
-		// TODO Auto-generated method stub
-
-	}
+	protected void openPage(PageLocator locator, Object... args) {/* Native App doesn't require Open Page*/ }
 
 
 	@FindBy(locator = "home.menu.btn")
@@ -43,9 +39,13 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 	
 	public void enterExpenseDetails() {
+
 		addBtn.click();
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
-		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
+		
+		// String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
+		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
+
+		if("android".equalsIgnoreCase(platform) || "linux".equalsIgnoreCase(platform)) {
 			headDropdown.click();
 			flightOption.click();
 		}else {
@@ -56,9 +56,9 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 	
 	public void verifyPopupText() {
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
+		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
 		String result = "";
-		if(platform.equalsIgnoreCase("android") || platform.equalsIgnoreCase("linux")) {
+		if("android".equalsIgnoreCase(platform) || "linux".equalsIgnoreCase(platform)) {
 			result = "Select Currency";
 		}else {
 			result = "Please enter valid category";

@@ -11,10 +11,10 @@ import com.quantum.utils.AppiumUtils;
 import com.quantum.utils.ConfigurationUtils;
 import com.quantum.utils.ConsoleUtils;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
 @QAFTestStepProvider

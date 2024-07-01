@@ -10,7 +10,7 @@ import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.util.PropertyUtil;
-import com.quantum.utils.ReportUtils;
+import com.quantum.utils.*;
 
 
 public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
@@ -31,8 +31,11 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 
 	public void search(String searchKey){
+		
+		
 		searchTextBox.waitForEnabled(10000);
 		searchTextBox.click();
+		
 		searchTextBox.clear();
 		searchTextBox.sendKeys(searchKey);
 		// The following element is an example of creating run time objects on the fly
@@ -47,7 +50,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 	}
 
 	public void verifyResult(List<String> results){
-		QAFExtendedWebElement searchResultElement;
+//		QAFExtendedWebElement searchResultElement;
 		for (String result : results) {
 			QAFExtendedWebElement searchResult = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("search.result.link"), result));
 			searchResult.waitForVisible(5000);

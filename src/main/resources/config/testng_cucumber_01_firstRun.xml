@@ -6,8 +6,9 @@
 	</listeners>
 
 	<test name="Web Scenarios Android Test" enabled="true"
-		thread-count="10">
+		thread-count="3">
 		<parameter name="perfecto.capabilities.model" value="Galaxy.*"></parameter>
+		<parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
 		<groups>
 			<run>
 				<include name="@first" />
@@ -18,8 +19,9 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios iOS Test" enabled="true" thread-count="10">
+	<test name="Web Scenarios iOS Test" enabled="true" thread-count="3">
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
+		<parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
 		<groups>
 			<run>
 				<include name="@first" />
