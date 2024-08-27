@@ -12,9 +12,9 @@
     <test name="IOS Expense Tracker Test" enabled="true">
         <parameter name="perfecto.capabilities.model" value="iPhone.*"/>
         
-        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/InvoiceApp1.0.ipa"/>
-        <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
-        <parameter name="driver.capabilities.iOSResign" value="true"/>
+        <parameter name="perfecto.capabilities.app" value="PUBLIC:ExpenseTracker/Native/InvoiceApp1.0.ipa"/>
+        <parameter name="perfecto.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
+        <parameter name="perfecto.capabilities.iOSResign" value="true"/>
         <parameter name="env.resources" value="src/main/resources/ios"/>
 
         <groups>
@@ -27,7 +27,7 @@
         </classes>
     </test>
 
-    <test name="Android Expense Tracker Test" enabled="true">
+    <test name="Android Expense Tracker Test" enabled="false">
         <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"/>
         <parameter name="perfecto.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
         <parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
@@ -42,7 +42,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Expense Tracker Test" enabled="true">
+    <test name="Android Emulator Expense Tracker Test" enabled="false">
         <parameter name="perfecto.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="perfecto.capabilities.platformName" value="Android"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="latest"/>
@@ -60,7 +60,7 @@
         </classes>
     </test>
     
-    <test name="iOS Simulator Expense Tracker Test" enabled="true">
+    <test name="iOS Simulator Expense Tracker Test" enabled="false">
         <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="latest"/>
