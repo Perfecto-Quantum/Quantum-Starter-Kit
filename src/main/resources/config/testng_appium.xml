@@ -27,7 +27,7 @@
         </classes>
     </test>
 
-    <test name="Android Expense Tracker Test" enabled="false">
+    <test name="Android Expense Tracker Test" enabled="true">
         <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"/>
         <parameter name="perfecto.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
         <parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
@@ -42,7 +42,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Expense Tracker Test" enabled="false">
+    <test name="Android Emulator Expense Tracker Test" enabled="true">
         <parameter name="perfecto.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="perfecto.capabilities.platformName" value="Android"/>
 		<parameter name="perfecto.capabilities.platformVersion" value="latest"/>
@@ -60,7 +60,7 @@
         </classes>
     </test>
     
-    <test name="iOS Simulator Expense Tracker Test" enabled="false">
+    <test name="iOS Simulator Expense Tracker Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="latest"/>

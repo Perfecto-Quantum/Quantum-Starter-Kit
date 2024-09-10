@@ -42,9 +42,8 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 
 		addBtn.click();
 		
-		// String platform = DriverUtils.getDriver().getCapabilities().getPlatform().name();
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
-
+		 String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
+		
 		if("android".equalsIgnoreCase(platform) || "linux".equalsIgnoreCase(platform)) {
 			headDropdown.click();
 			flightOption.click();
@@ -56,9 +55,10 @@ public class ExpenseTrackerHomePage extends WebDriverBaseTestPage<WebDriverTestP
 	}
 	
 	public void verifyPopupText() {
-		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
+//		String platform = DriverUtils.getDriver().getCapabilities().getPlatformName().name();
 		String result = "";
-		if("android".equalsIgnoreCase(platform) || "linux".equalsIgnoreCase(platform)) {
+		if(DriverUtils.isAndroid()) {
+//		if("android".equalsIgnoreCase(platform) || "linux".equalsIgnoreCase(platform)) {
 			result = "Select Currency";
 		}else {
 			result = "Please enter valid category";

@@ -9,7 +9,8 @@
 		thread-count="3">
 		<parameter name="perfecto.additional.capabilities"
 			value="{'perfecto:openDeviceTimeout':15}" />
-		<parameter name="perfecto.capabilities.model" value="Galaxy.*"></parameter>
+		<parameter name="perfecto.capabilities.model" value="Galaxy.*"/>
+		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -25,6 +26,7 @@
 			value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
+		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
 		<groups>
 			<run>
 				<include name="@Web" />
