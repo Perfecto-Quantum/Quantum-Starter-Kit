@@ -33,7 +33,11 @@ public class GoogleStepDefs {
 		} catch (Exception e) { }
 		
 		DeviceUtils.getQAFDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		DeviceUtils.getQAFDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+		
+		if(!DriverUtils.isAndroid() && !DriverUtils.isIOS()) {
+			DeviceUtils.getQAFDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+		}
+		
 		
 		System.out.println(DriverUtils.getDriver().getCapabilities().getCapability("browserName"));
 		System.out.println(DriverUtils.getDriver().getCapabilities().getBrowserName());
