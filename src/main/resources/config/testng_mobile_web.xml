@@ -4,6 +4,8 @@
 	<listeners>
 		<listener class-name="com.quantum.listeners.QuantumReportiumListener" />
 	</listeners>
+	
+	<parameter name="driver.name" value="perfectoDriver"/>
 
 	<test name="Web Scenarios Android Test" enabled="true"
 		thread-count="3">
@@ -11,7 +13,6 @@
 			value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.model" value="Galaxy.*"/>
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
-		<parameter name="driver.name" value="perfectoDriver"/>
 		<parameter name="env.resources" value="src/main/resources/android"/>
 		<groups>
 			<run>
@@ -29,7 +30,8 @@
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"/>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"/>
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
-		<parameter name="driver.name" value="perfectoDriver"/>
+		<parameter name="env.resources" value="src/main/resources/ios"/>
+		
 		<groups>
 			<run>
 				<include name="@Web" />
