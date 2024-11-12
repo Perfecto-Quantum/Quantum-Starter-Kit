@@ -28,19 +28,24 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 	private QAFExtendedWebElement searchOption;
 	@FindBy(locator = "search.result.link")
 	private QAFExtendedWebElement searchResultLink;
+	@FindBy(locator = "search.quantum.framework.result.option")
+	private QAFExtendedWebElement frameworkSearchOption;
+	
 
 
 	public void search(String searchKey){
 		
-		
-		searchTextBox.waitForEnabled(10000);
+//		searchTextBox.waitForEnabled(10000);
 		searchTextBox.click();
 		
 		searchTextBox.clear();
 		searchTextBox.sendKeys(searchKey);
+		
+		frameworkSearchOption.click();
+		
 		// The following element is an example of creating run time objects on the fly
-		QAFExtendedWebElement search = new QAFExtendedWebElement(String.format(props.getString("search.option"), searchKey));
-		search.click();
+//		QAFExtendedWebElement search = new QAFExtendedWebElement(String.format(props.getString("search.option"), "framework"));
+//		search.click();
 	}
 
 	public void verifyResult(String result){

@@ -14,6 +14,7 @@
 			value="latest"/>
 		<parameter name="perfecto.capabilities.resolution" value="1280x1024"/>
 		<parameter name="perfecto.capabilities.location" value="US East"/>
+<!--		<parameter name="perfecto.capabilities.takesScreenshot" value="true"/>-->
 <!--		<parameter name="perfecto.capabilities.deviceType" value="Web"></parameter>-->
 		<parameter name="env.resources" value="src/main/resources/common" />
 		<groups>
@@ -26,11 +27,15 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios Android Test" enabled="false"
+	<test name="Web Scenarios Android Test" enabled="true"
 		thread-count="3">
 		<parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
 		<parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
+		<parameter name="perfecto.capabilities.platformName" value="Android"/>
+		<parameter name="env.resources" value="src/main/resources/android" />
+		<parameter name="driver.name" value="perfectoDriver"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -44,11 +49,13 @@
 				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
 		</classes>
 	</test>
-	<test name="Web Scenarios iOS Test" enabled="false" thread-count="3">
-		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
+	<test name="Web Scenarios iOS Test" enabled="true" thread-count="3">
+		<parameter name="perfecto.capabilities.model" value="iPhone.*"/>
 		 <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
-		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value="Safari"/>
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
+		 <parameter name="driver.name" value="perfectoDriver"/>
+        <parameter name="env.resources" value="src/main/resources/ios"/>
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -63,10 +70,10 @@
 		</classes>
 	</test>
 
-    <test name="IOS Expense Tracker Test" enabled="false">
-        <parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
+    <test name="IOS Expense Tracker Test" enabled="true">
+        <parameter name="perfecto.capabilities.model" value="iPhone.*"/>
          <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
-        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"></parameter>
+        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/iOS/InvoiceApp1.0.ipa"/>
         <parameter name="driver.capabilities.bundleId" value="io.perfecto.expense.tracker"/>
         <parameter name="driver.capabilities.iOSResign" value="true"/>
         <parameter name="driver.name" value="perfectoDriver"/>
@@ -81,10 +88,10 @@
             <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
         </classes>
     </test>
-    <test name="Android Expense Tracker Test" enabled="false">
-        <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
+    <test name="Android Expense Tracker Test" enabled="true">
+        <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"/>
         <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
-        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"></parameter>
+        <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
         <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="driver.name" value="perfectoDriver"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
@@ -98,7 +105,7 @@
         </classes>
     </test>
     
-    <test name="Android Emulator Expense Tracker Test" enabled="false">
+    <test name="Android Emulator Expense Tracker Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="Android"/>
 		<parameter name="driver.capabilities.platformVersion" value="latest"/>
@@ -117,7 +124,7 @@
         </classes>
     </test>
     
-    <test name="iOS Simulator Expense Tracker Test" enabled="false">
+    <test name="iOS Simulator Expense Tracker Test" enabled="true">
         <parameter name="driver.additional.capabilities" value="{'perfecto:useVirtualDevice':true}" />
 		<parameter name="driver.capabilities.platformName" value="iOS"/>
 		<parameter name="driver.capabilities.platformVersion" value="latest"/>

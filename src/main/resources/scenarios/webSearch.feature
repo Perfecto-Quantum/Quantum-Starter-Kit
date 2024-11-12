@@ -13,7 +13,7 @@ Feature: Google Search
   @WebSearch @retry @TC-1
   Scenario: Search Quantum
     Given I am on Google Search Page
-    When I search for "perfecto mobile quantum"
+    When I search for "perfecto mobile quantum "
     Then it should have "perfecto" in search results
     Then I am on Google Search Page
 
