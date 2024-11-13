@@ -13,6 +13,8 @@ on:
     branches: [ "*" ]
   pull_request:
     branches: [ "*" ]
+  schedule:
+    - crons: '0 0 * * *'
 
 jobs:
   build:
