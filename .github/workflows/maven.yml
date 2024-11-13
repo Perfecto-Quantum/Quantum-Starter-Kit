@@ -10,9 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "*" ]
+    branches: [ "1.31.3.b3" ]
   pull_request:
-    branches: [ "*" ]
+    branches: [ "1.31.3.b3" ]
   schedule:
     - cron: '0 0 * * *'
 
