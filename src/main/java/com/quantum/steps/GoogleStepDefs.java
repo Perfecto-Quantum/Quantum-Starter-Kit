@@ -26,7 +26,7 @@ public class GoogleStepDefs {
 		
 		try {
 			Map<String, Object> params = new HashMap<>();
-			params.put("label", "Continue");
+			params.put("label", "No thanks");
 			params.put("timeout", "5");
 			params.put("threshold", "95");
 			DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click", params);

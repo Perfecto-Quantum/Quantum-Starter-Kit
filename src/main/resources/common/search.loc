@@ -1,5 +1,5 @@
 #locator repository for search page
-search.text.box = {\"locator\":\"name=q\",\"desc\":\"Search Text Box\"}
+search.text.box = {\"locator\":\"xpath=//*[@name='q']\",\"desc\":\"Search Text Box\"}
 search.option = {\"locator\":\"xpath=(//*[text()='%s'])",\"desc\":\"search options in google\"}
 search.result.link = {\"locator\":\"partialLink=%s",\"desc\":\"search results partial link in google\"}
 search.quantum.framework.result.option= {\"locator\":\"xpath=(//ul)[1]//b[text()=' automation'] | (//ul)[1]//b[contains(text(),' framework')]",\"desc\":\"Quantum framework search options in google\"}
