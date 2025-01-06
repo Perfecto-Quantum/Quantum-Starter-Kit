@@ -41,8 +41,9 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 		searchTextBox.clear();
 		searchTextBox.sendKeys(searchKey);
 		
+		frameworkSearchOption.waitForEnabled(25000);
 		frameworkSearchOption.click();
-		
+
 		// The following element is an example of creating run time objects on the fly
 //		QAFExtendedWebElement search = new QAFExtendedWebElement(String.format(props.getString("search.option"), "framework"));
 //		search.click();
@@ -50,7 +51,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 	public void verifyResult(String result){
 		QAFExtendedWebElement searchResult = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("search.result.link"), result));
-		searchResult.waitForVisible(5000);
+		searchResult.waitForVisible(15000);
 		ReportUtils.logAssert("Expected result: " + result, searchResult.isDisplayed());	
 	}
 
