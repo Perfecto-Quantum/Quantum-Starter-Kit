@@ -13,7 +13,7 @@ Feature: Google Search
   @WebSearch @retry @TC-1
   Scenario: Search Quantum
     Given I am on Google Search Page
-    When I search for "perfecto mobile quantum "
+    When I search for "perfecto mobile quantum"
     Then it should have "perfecto" in search results
     Then I am on Google Search Page
 
@@ -44,9 +44,9 @@ Feature: Google Search
     #xml file must be in directory listed in env.resources property
     Examples: {'key' : 'demo.websearch.dataset'}
 
-  
-    
-  @TestDataTable
+
+
+  @WebTestDataTable
   Scenario Outline: Search Quantum data table
     Given I am on Google Search Page
     And I have the following books in the store:
