@@ -9,6 +9,7 @@ Feature: Google Search
 
     #for csv, txt, xls files specify datafile location
     Examples: {'datafile' : 'src/main/resources/data/testData.csv'}
+    #Examples: {'datafile' : 'src/main/resources/data/testData.xls', 'sheetname':'${datasheet}', 'filter':'searchResult=="Quantum"'}
 
   @WebSearch @retry @TC-1
   Scenario: Search Quantum

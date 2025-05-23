@@ -8,19 +8,20 @@
 	</listeners>
 
 	<test name="Web Scenarios Chrome Test" enabled="true">
-		<parameter name="perfecto.capabilities.platformName" value="Windows"></parameter>
+		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion"
-			value="10"></parameter>
-		<parameter name="perfecto.capabilities.browserName" value="Chrome"></parameter>
+			value="10"/>
+		<parameter name="perfecto.capabilities.browserName" value="Chrome"/>
 		<parameter name="perfecto.capabilities.browserVersion"
-			value="latest"></parameter>
-		<parameter name="perfecto.capabilities.resolution" value="1280x1024"></parameter>
-		<parameter name="perfecto.capabilities.location" value="US East"></parameter>
+			value="latest"/>
+		<parameter name="perfecto.capabilities.resolution" value="1280x1024"/>
+		<parameter name="perfecto.capabilities.location" value="US East"/>
+		<parameter name="datasheet" value="searchTerms"/>
 
 		<parameter name="env.resources" value="src/main/resources/common" />
 		<groups>
 			<run>
-				<include name="@web" />
+				<include name="@WebDDcsv" />
 			</run>
 		</groups>
 		<classes>

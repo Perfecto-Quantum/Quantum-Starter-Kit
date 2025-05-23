@@ -13,7 +13,9 @@
 		<testngXmlFile>testng_all.xml</testngXmlFile>
 		<skipTests>false</skipTests>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<quantum.version>1.31.3</quantum.version>
+				<quantum.version>3.1.1</quantum.version>
+
+<!--		<quantum.version>1.30.1</quantum.version>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -49,7 +51,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
-				
+
 				<configuration>
 					<argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
 					<systemPropertyVariables>
@@ -98,22 +100,28 @@
 			<version>1.3</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.quantum</groupId>
-			<artifactId>quantum-support</artifactId>
-			<version>${quantum.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>xml-apis</groupId>
-					<artifactId>xml-apis</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		
+				<dependency>
+					<groupId>io.perfecto</groupId>
+					<artifactId>quantum</artifactId>
+					<version>${quantum.version}</version>
+				</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.quantum</groupId>-->
+<!--			<artifactId>quantum-support</artifactId>-->
+<!--			<version>${quantum.version}</version>-->
+<!--			<exclusions>-->
+<!--				<exclusion>-->
+<!--					<groupId>log4j</groupId>-->
+<!--					<artifactId>log4j</artifactId>-->
+<!--				</exclusion>-->
+<!--				<exclusion>-->
+<!--					<groupId>xml-apis</groupId>-->
+<!--					<artifactId>xml-apis</artifactId>-->
+<!--				</exclusion>-->
+<!--			</exclusions>-->
+<!--		</dependency>-->
+
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
