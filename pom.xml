@@ -84,7 +84,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.6.4</version>
+			<version>6.1.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
@@ -103,7 +103,7 @@
 				<dependency>
 					<groupId>io.perfecto</groupId>
 					<artifactId>quantum</artifactId>
-					<version>${quantum.version}</version>
+					<version>3.1.2</version>
 				</dependency>
 
 <!--		<dependency>-->
