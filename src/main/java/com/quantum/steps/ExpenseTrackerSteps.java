@@ -11,7 +11,6 @@ import io.cucumber.java.en.When;
 public class ExpenseTrackerSteps {
 
 	
-
 	@Then("I should see expense tracker login screen")
 	public void verifyExpenseTrackerLogin() {
 		new ExpenseTrackerLoginPage().verifyExpenseTrackerLoginScreen();

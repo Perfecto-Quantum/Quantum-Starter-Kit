@@ -3,6 +3,9 @@
  */
 package com.quantum.steps;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
@@ -10,12 +13,12 @@ import com.qmetry.qaf.automation.util.StringUtil;
 import com.quantum.utils.AppiumUtils;
 import com.quantum.utils.ConfigurationUtils;
 import com.quantum.utils.ConsoleUtils;
+import com.quantum.utils.DriverUtils;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 
 @QAFTestStepProvider
 public class CommonStepsDefs {
@@ -44,5 +47,22 @@ public class CommonStepsDefs {
 		else if (AppiumUtils.getAppiumDriver() instanceof AndroidDriver)
 			ConsoleUtils.logWarningBlocks("Driver is an instance of AndroidDriver");
 	}
-	
+
+	@Then("I run the accessibility audit on \"(.+)\"")
+	public void executeAccessibilityScan(String screenName) {
+
+		boolean isNativeCheck = DriverUtils.isAndroid() || DriverUtils.isIOS();
+
+		if (isNativeCheck) {
+
+			Map<String, String> params = new HashMap<>();
+
+			params.put("tag", screenName);
+
+			DriverUtils.getAppiumDriver().executeScript("mobile:checkAccessibility:audit", params);
+
+		}
+
+	}
+
 }

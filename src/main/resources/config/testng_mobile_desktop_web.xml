@@ -7,7 +7,7 @@
 		class-name="com.quantum.listeners.FailedTestSuiteListener" />-->
 	</listeners>
 
-	<test name="Web Scenarios Chrome Test" enabled="true">
+	<test name="Web Scenarios Chrome Test" enabled="false">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion"
 			value="10"/>
@@ -21,7 +21,7 @@
 		<parameter name="env.resources" value="src/main/resources/common" />
 		<groups>
 			<run>
-				<include name="@WebDDcsv" />
+				<include name="@TC-1" />
 			</run>
 		</groups>
 		<classes>
@@ -30,15 +30,16 @@
 		</classes>
 	</test>
 
-	<test name="Web Scenarios Android Test" enabled="true"
+	<test name="Web Scenarios Android Test" enabled="false"
 		thread-count="3">
 		<parameter name="perfecto.additional.capabilities"
 			value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.model" value="Galaxy.*"/>
-		<parameter name="perfecto.capabilities.automationName" value="Appium" />
+		<parameter name="env.resources" value="src/main/resources/android"/>
+
 		<groups>
 			<run>
-				<include name="@Web" />
+				<include name="@WebResultsList" />
 			</run>
 		</groups>
 		<classes>
@@ -51,10 +52,10 @@
 			value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.model" value="iPhone.*"></parameter>
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
-		<parameter name="perfecto.capabilities.automationName" value="Appium" />
+		<parameter name="env.resources" value="src/main/resources/ios"/>
 		<groups>
 			<run>
-				<include name="@Web" />
+				<include name="@WebResultsList" />
 			</run>
 		</groups>
 		<classes>

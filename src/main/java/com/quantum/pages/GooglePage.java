@@ -24,6 +24,7 @@ public class GooglePage extends WebDriverBaseTestPage<WebDriverTestPage> {
 
 	@FindBy(locator = "search.text.box")
 	private QAFExtendedWebElement searchTextBox;
+	
 	@FindBy(locator = "search.option")
 	private QAFExtendedWebElement searchOption;
 	@FindBy(locator = "search.result.link")
