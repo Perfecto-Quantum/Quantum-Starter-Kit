@@ -30,6 +30,7 @@
     <test name="Android Expense Tracker Test" enabled="true">
         <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"/>
         <parameter name="perfecto.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
+        <parameter name="perfecto.capabilities.appActivity" value="io.perfecto.expense.tracker/app.perfecto.com.expencemanager.ui.splash.SplashActivity"/>
         <parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
@@ -48,6 +49,7 @@
 		<parameter name="perfecto.capabilities.platformVersion" value="latest"/>
 		<parameter name="perfecto.capabilities.model" value="pixel 6"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
+		<parameter name="perfecto.capabilities.appActivity" value="io.perfecto.expense.tracker/app.perfecto.com.expencemanager.ui.splash.SplashActivity"/>
 		<parameter name="perfecto.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
 		<parameter name="env.resources" value="src/main/resources/android"/>
         <groups>
