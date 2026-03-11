@@ -1,0 +1,12 @@
+blaze.home.header.option=xpath=//a[text()='%s']
+blaze.contact.email.input=id=recipient-email
+blaze.contact.name.input=id=recipient-name
+blaze.contact.message.input=id=message-text
+blaze.contact.send.btn=xpath=//button[text()='Send message']
+blaze.login.username.input=id=loginusername
+blaze.login.password.input=id=loginpassword
+blaze.login.login.btn=xpath=//button[text()='Log in']
+blaze.home.welcome.text=id=nameofuser
+blaze.home.category.options=xpath=//a[@id='itemc' and text()='%s']
+blaze.product.addtocart.btn=xpath=//a[text()='Add to cart']
+blaze.cart.product.title=xpath=//tr[@class='success']//td[2]

@@ -85,6 +85,7 @@
         <parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
         <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
         <parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"></parameter>
+        <parameter name="perfecto.capabilities.appActivity" value="io.perfecto.expense.tracker/app.perfecto.com.expencemanager.ui.splash.SplashActivity"/>
         <parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
         <parameter name="driver.name" value="perfectoDriver"/>
         <parameter name="env.resources" value="src/main/resources/android"/>
@@ -104,6 +105,7 @@
 		<parameter name="driver.capabilities.platformVersion" value="latest"/>
 		<parameter name="perfecto.capabilities.model" value="pixel 6"/>
 		<parameter name="driver.capabilities.app" value="PUBLIC:ExpenseTracker/Native/ExpenseAppVer1.0.apk"/>
+		<parameter name="perfecto.capabilities.appActivity" value="io.perfecto.expense.tracker/app.perfecto.com.expencemanager.ui.splash.SplashActivity"/>
 		<parameter name="driver.capabilities.appPackage" value="io.perfecto.expense.tracker"/>
 		<parameter name="driver.name" value="perfectoDriver"/>
 		<parameter name="env.resources" value="src/main/resources/android"/>

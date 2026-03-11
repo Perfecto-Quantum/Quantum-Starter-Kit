@@ -7,7 +7,7 @@
 		class-name="com.quantum.listeners.FailedTestSuiteListener" />-->
 	</listeners>
 
-	<test name="Web Scenarios Chrome Test" enabled="false">
+	<test name="Web Scenarios Chrome Test" enabled="true">
 		<parameter name="perfecto.capabilities.platformName" value="Windows"/>
 		<parameter name="perfecto.capabilities.platformVersion"
 			value="10"/>
@@ -21,7 +21,7 @@
 		<parameter name="env.resources" value="src/main/resources/common" />
 		<groups>
 			<run>
-				<include name="@TC-1" />
+				<include name="@DemoBlaze"/>
 			</run>
 		</groups>
 		<classes>
@@ -30,7 +30,7 @@
 		</classes>
 	</test>
 
-	<test name="Web Scenarios Android Test" enabled="false"
+	<test name="Web Scenarios Android Test" enabled="true"
 		thread-count="3">
 		<parameter name="perfecto.additional.capabilities"
 			value="{'perfecto:openDeviceTimeout':15}" />
@@ -39,7 +39,7 @@
 
 		<groups>
 			<run>
-				<include name="@WebResultsList" />
+				<include name="@DemoBlaze"/>
 			</run>
 		</groups>
 		<classes>
@@ -55,7 +55,7 @@
 		<parameter name="env.resources" value="src/main/resources/ios"/>
 		<groups>
 			<run>
-				<include name="@WebResultsList" />
+				<include name="@DemoBlaze"/>
 			</run>
 		</groups>
 		<classes>
