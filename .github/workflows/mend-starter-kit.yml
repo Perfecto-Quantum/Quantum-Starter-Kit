@@ -1,0 +1,44 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Mend Scan
+
+env:
+  MEND_URL: ${{ vars.MEND_URL }}
+  MEND_EMAIL: ${{ vars.MEND_EMAIL }}
+  MEND_ORGANIZATION: ${{ vars.MEND_ORGANIZATION }}
+  MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
+
+on:
+  push:
+    branches: 
+    - main
+  pull_request:
+    branches:
+    - main
+  schedule:
+    - cron: '0 0 * * SAT'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # env:
+    #   MEND_URL: ${{ vars.MEND_URL }}
+    #   MEND_EMAIL: ${{ vars.MEND_EMAIL }}
+    #   MEND_USER_KEY: ${{ secrets.MEND_USER_KEY }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setting up Mend CLI
+      run: |
+        sudo curl https://downloads.mend.io/cli/linux_amd64/mend -o /usr/local/bin/mend
+        sudo chmod +x /usr/local/bin/mend
+    - name: Executing Mend SCA (Software Composition Analysis)
+      run:
+        mend sca -e -u
+    - name: Executing Mend SAST (Static Application Security Testing)
+      run:
+        mend sast
