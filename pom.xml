@@ -13,7 +13,7 @@
 		<testngXmlFile>testng_mobile_desktop_web.xml</testngXmlFile>
 		<skipTests>false</skipTests>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<quantum.version>3.2.0</quantum.version>
+		<quantum.version>3.2.2</quantum.version>
 
 		<!--		<quantum.version>1.30.1</quantum.version>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,7 +98,5 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
-
 	</dependencies>
 </project>
