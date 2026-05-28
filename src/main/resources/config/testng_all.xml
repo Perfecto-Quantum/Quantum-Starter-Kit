@@ -31,6 +31,7 @@
 		<parameter name="perfecto.capabilities.model" value="(?!.*Tab).*"></parameter>
 		<parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
+		<parameter name="env.resources" value="src/main/resources/android"/>
 		<groups>
 			<run>
 				<include name="@Web" />
@@ -49,6 +50,7 @@
 		 <parameter name="perfecto.additional.capabilities" value="{'perfecto:openDeviceTimeout':15}" />
 		<parameter name="perfecto.capabilities.browserName" value="Safari"></parameter>
 		<parameter name="perfecto.capabilities.automationName" value="Appium"/>
+		<parameter name="env.resources" value="src/main/resources/ios"/>
 		<groups>
 			<run>
 				<include name="@Web" />
