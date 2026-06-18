@@ -201,7 +201,7 @@ Automation Architects and developers should go through this Quantum Course as it
             │  
             ├───ios                                         # Addition iOS properties. Specified in testng_appium file.  
             │       env.properties                          # iOS specific additional environment properties  
-            │       expensetracker.loc                      # Android specific object locators for appium test objects  
+            │       expensetracker.loc                      # iOS specific object locators for appium test objects  
             │  
             └───scenarios                                   # Cucumber/Gherkin feature files directory  
                     appium.feature                     	   # Appium test feature file called by testng_appium xml file  
