@@ -23,7 +23,7 @@ Eclipse users should also install:
 1. Eclipse has in-built Maven plugin 
     - Optional - [Maven Plugin](http://marketplace.eclipse.org/content/m2e-connector-maven-dependency-plugin)
 
-2. [TestNG Plugin](http://testng.org/doc/download.html)
+2. [TestNG Plugin](https://testng.org/#_download)
 
 3. QAF BDD Plugin - Or go to install new software option in eclipse, and download from this url https://qmetry.github.io/qaf/editor/bdd/eclipse/
     In case, of network constraints, one can follow the instruction mentioned in [QAF BDD Offline](https://developers.perfectomobile.com/display/PD/Quantum+framework+introduction#expand-InstallanofflineversionoftheQAFBDDplugininEclipse)
