@@ -25,9 +25,6 @@ Eclipse users should also install:
 
 2. [TestNG Plugin](http://testng.org/doc/download.html)
 
-3. QAF BDD Plugin - Or go to install new software option in eclipse, and download from this url https://qmetry.github.io/qaf/editor/bdd/eclipse/
-    In case, of network constraints, one can follow the instruction mentioned in [QAF BDD Offline](https://developers.perfectomobile.com/display/PD/Quantum+framework+introduction#expand-InstallanofflineversionoftheQAFBDDplugininEclipse)
-
 IntelliJ IDEA users should also install:
 
 1. [Cucumber Plugin (Community version only)](https://plugins.jetbrains.com/plugin/7212)
